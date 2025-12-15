@@ -91,35 +91,7 @@ export default function ProductGuides() {
               </div>
             ))}
 
-            <div className="bg-muted/30 rounded-xl p-8 border mt-12">
-              <div className="flex flex-col md:flex-row items-start gap-6">
-                <div className="h-12 w-12 rounded-full bg-secondary/10 flex items-center justify-center shrink-0">
-                  <PlayCircle className="h-6 w-6 text-secondary" />
-                </div>
-                <div className="space-y-4 flex-1">
-                  <h3 className="text-xl font-bold">Video Tutorials</h3>
-                  <p className="text-muted-foreground">
-                    Watch our step-by-step video guides for visual instructions on installation and curtain changing procedures.
-                  </p>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-                    <Button variant="outline" className="justify-start gap-3 h-auto py-3">
-                      <PlayCircle className="h-5 w-5 text-primary" />
-                      <div className="text-left">
-                        <div className="font-semibold">Installation Guide</div>
-                        <div className="text-xs text-muted-foreground">Duration: 3:45</div>
-                      </div>
-                    </Button>
-                    <Button variant="outline" className="justify-start gap-3 h-auto py-3">
-                      <PlayCircle className="h-5 w-5 text-primary" />
-                      <div className="text-left">
-                        <div className="font-semibold">Changing Curtains</div>
-                        <div className="text-xs text-muted-foreground">Duration: 2:15</div>
-                      </div>
-                    </Button>
-                  </div>
-                </div>
-              </div>
-            </div>
+
           </TabsContent>
           
           <TabsContent value="faq">
