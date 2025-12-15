@@ -25,8 +25,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="container flex h-16 items-center justify-between">
           <Link href="/">
             <div className="flex items-center gap-2 cursor-pointer">
-              <ShieldCheck className="h-8 w-8 text-primary" />
-              <span className="text-xl font-bold text-primary tracking-tight">Endurocide</span>
+              <img src="/logo.webp" alt="Endurocide NZ Logo" className="h-10 w-auto" />
             </div>
           </Link>
 
@@ -101,8 +100,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="container grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <ShieldCheck className="h-6 w-6 text-primary" />
-              <span className="text-lg font-bold text-primary">Endurocide</span>
+              <img src="/logo.webp" alt="Endurocide NZ Logo" className="h-8 w-auto" />
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Advanced antimicrobial disposable curtains for superior infection control in healthcare environments.
@@ -137,7 +135,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </div>
         </div>
         <div className="container mt-12 pt-8 border-t text-center text-xs text-muted-foreground">
-          © {new Date().getFullYear()} Endurocide. All rights reserved.
+          © {new Date().getFullYear()} Endurocide NZ. All rights reserved.
         </div>
       </footer>
     </div>
