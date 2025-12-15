@@ -19,21 +19,11 @@ export default function Products() {
       title: "Standard Curtain",
       description: "Designed for suspended ceiling tracks. 100% polypropylene with patented antimicrobial technology.",
       features: ["Height: 2.0m", "Widths: 3.75m, 5.5m, 7.5m", "Patented 'Trap & Kill' technology"],
-      colorCategories: {
-        standard: [
-          { name: "Medical Blue", hex: "#0073bc" },
-          { name: "Teal", hex: "#008080" },
-          { name: "Grey", hex: "#808080" }
-        ],
-        special: [
-          { name: "Pastel Blue", hex: "#AEC6CF" },
-          { name: "Pastel Yellow", hex: "#FDFD96" },
-          { name: "Latte", hex: "#C5A085" }
-        ],
-        printed: [
-          { name: "Dotty on White", hex: "#FFFFFF", border: true }
-        ]
-      },
+      colors: [
+        { name: "Medical Blue", hex: "#0073bc" },
+        { name: "Teal", hex: "#008080" },
+        { name: "Grey", hex: "#808080" }
+      ],
       image: "/images/hero-curtain.jpg",
       tag: "Best Seller"
     },
@@ -42,21 +32,11 @@ export default function Products() {
       title: "Mesh Top Curtain",
       description: "Designed for ceiling-fixed tracks. Features a 0.55m mesh top compliant with NFPA 13 for sprinkler systems.",
       features: ["Height: 2.55m (incl. mesh)", "Widths: 3.75m, 5.5m, 7.5m", "Enhanced airflow & safety"],
-      colorCategories: {
-        standard: [
-          { name: "Medical Blue", hex: "#0073bc" },
-          { name: "Teal", hex: "#008080" },
-          { name: "Grey", hex: "#808080" }
-        ],
-        special: [
-          { name: "Pastel Blue", hex: "#AEC6CF" },
-          { name: "Pastel Yellow", hex: "#FDFD96" },
-          { name: "Latte", hex: "#C5A085" }
-        ],
-        printed: [
-          { name: "Dotty on White", hex: "#FFFFFF", border: true }
-        ]
-      },
+      colors: [
+        { name: "Medical Blue", hex: "#0073bc" },
+        { name: "Teal", hex: "#008080" },
+        { name: "Grey", hex: "#808080" }
+      ],
       image: "/images/hospital-corridor.jpg",
       tag: "Safety Compliant"
     },
@@ -65,21 +45,11 @@ export default function Products() {
       title: "Long Drop Curtain",
       description: "Extra length curtains designed for high ceilings and ceiling-fixed tracks. Maintains full antimicrobial protection.",
       features: ["Height: 2.6m", "Widths: 3.75m, 5.5m, 7.5m", "Ideal for high ceilings"],
-      colorCategories: {
-        standard: [
-          { name: "Medical Blue", hex: "#0073bc" },
-          { name: "Teal", hex: "#008080" },
-          { name: "Grey", hex: "#808080" }
-        ],
-        special: [
-          { name: "Pastel Blue", hex: "#AEC6CF" },
-          { name: "Pastel Yellow", hex: "#FDFD96" },
-          { name: "Latte", hex: "#C5A085" }
-        ],
-        printed: [
-          { name: "Dotty on White", hex: "#FFFFFF", border: true }
-        ]
-      },
+      colors: [
+        { name: "Medical Blue", hex: "#0073bc" },
+        { name: "Teal", hex: "#008080" },
+        { name: "Grey", hex: "#808080" }
+      ],
       image: "/images/hero-curtain.jpg", // Reusing hero image
       tag: "Specialist"
     }
@@ -131,48 +101,17 @@ export default function Products() {
                   ))}
                 </ul>
 
-                <div className="space-y-3">
-                  <div>
-                    <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider block mb-1.5">Standard Colors</span>
-                    <div className="flex gap-2">
-                      {product.colorCategories.standard.map((color) => (
-                        <div 
-                          key={color.name}
-                          className="h-6 w-6 rounded-full border border-border shadow-sm ring-offset-background transition-transform hover:scale-110 cursor-help"
-                          style={{ backgroundColor: color.hex }}
-                          title={color.name}
-                        />
-                      ))}
-                    </div>
-                  </div>
-                  
-                  <div className="grid grid-cols-2 gap-2">
-                    <div>
-                      <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider block mb-1.5">Special Order</span>
-                      <div className="flex gap-2">
-                        {product.colorCategories.special.map((color) => (
-                          <div 
-                            key={color.name}
-                            className="h-6 w-6 rounded-full border border-border shadow-sm ring-offset-background transition-transform hover:scale-110 cursor-help"
-                            style={{ backgroundColor: color.hex }}
-                            title={color.name}
-                          />
-                        ))}
-                      </div>
-                    </div>
-                    <div>
-                      <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider block mb-1.5">Printed</span>
-                      <div className="flex gap-2">
-                        {product.colorCategories.printed.map((color) => (
-                          <div 
-                            key={color.name}
-                            className={`h-6 w-6 rounded-full shadow-sm ring-offset-background transition-transform hover:scale-110 cursor-help ${color.border ? 'border border-gray-300' : ''}`}
-                            style={{ backgroundColor: color.hex }}
-                            title={color.name}
-                          />
-                        ))}
-                      </div>
-                    </div>
+                <div className="space-y-2">
+                  <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Standard Colors</span>
+                  <div className="flex gap-2">
+                    {product.colors.map((color) => (
+                      <div 
+                        key={color.name}
+                        className="h-6 w-6 rounded-full border border-border shadow-sm ring-offset-background transition-transform hover:scale-110 cursor-help"
+                        style={{ backgroundColor: color.hex }}
+                        title={color.name}
+                      />
+                    ))}
                   </div>
                 </div>
               </CardContent>
@@ -187,7 +126,7 @@ export default function Products() {
         </div>
 
         {/* Comparison Table */}
-        <div className="bg-card rounded-xl border shadow-sm overflow-hidden mb-20">
+        <div className="bg-card rounded-xl border shadow-sm overflow-hidden mb-12">
           <div className="p-6 border-b bg-muted/30">
             <h3 className="text-2xl font-bold text-primary">Product Comparison</h3>
             <p className="text-muted-foreground mt-2">Find the right curtain for your facility's needs.</p>
@@ -241,6 +180,75 @@ export default function Products() {
                 </TableRow>
               </TableBody>
             </Table>
+          </div>
+        </div>
+
+        {/* Global Color Options */}
+        <div className="bg-card rounded-xl border shadow-sm overflow-hidden mb-20">
+          <div className="p-6 border-b bg-muted/30">
+            <h3 className="text-2xl font-bold text-primary">Available Color Options</h3>
+            <p className="text-muted-foreground mt-2">All Endurocide® curtains are available in these color options.</p>
+          </div>
+          <div className="p-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Standard Colors */}
+              <div className="space-y-4">
+                <h4 className="font-semibold text-lg border-b pb-2">Standard Colors</h4>
+                <div className="grid grid-cols-2 gap-4">
+                  {[
+                    { name: "Medical Blue", hex: "#0073bc" },
+                    { name: "Teal", hex: "#008080" },
+                    { name: "Grey", hex: "#808080" }
+                  ].map((color) => (
+                    <div key={color.name} className="flex items-center gap-3">
+                      <div 
+                        className="h-10 w-10 rounded-full border border-border shadow-sm"
+                        style={{ backgroundColor: color.hex }}
+                      />
+                      <span className="text-sm font-medium">{color.name}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Special Order Colors */}
+              <div className="space-y-4">
+                <h4 className="font-semibold text-lg border-b pb-2">Special Order</h4>
+                <div className="grid grid-cols-2 gap-4">
+                  {[
+                    { name: "Pastel Blue", hex: "#AEC6CF" },
+                    { name: "Pastel Yellow", hex: "#FDFD96" },
+                    { name: "Latte", hex: "#C5A085" }
+                  ].map((color) => (
+                    <div key={color.name} className="flex items-center gap-3">
+                      <div 
+                        className="h-10 w-10 rounded-full border border-border shadow-sm"
+                        style={{ backgroundColor: color.hex }}
+                      />
+                      <span className="text-sm font-medium">{color.name}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Printed Options */}
+              <div className="space-y-4">
+                <h4 className="font-semibold text-lg border-b pb-2">Printed</h4>
+                <div className="grid grid-cols-1 gap-4">
+                  {[
+                    { name: "Dotty on White", hex: "#FFFFFF", border: true }
+                  ].map((color) => (
+                    <div key={color.name} className="flex items-center gap-3">
+                      <div 
+                        className={`h-10 w-10 rounded-full shadow-sm ${color.border ? 'border border-gray-300' : ''}`}
+                        style={{ backgroundColor: color.hex }}
+                      />
+                      <span className="text-sm font-medium">{color.name}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
