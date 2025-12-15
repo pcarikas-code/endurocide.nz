@@ -69,10 +69,10 @@ export default function ProductGuides() {
         </div>
 
         <Tabs defaultValue="documents" className="max-w-4xl mx-auto mb-20">
-          <TabsList className="grid w-full grid-cols-2 mb-8">
-            <TabsTrigger value="documents">Documentation</TabsTrigger>
-            <TabsTrigger value="standards">Standards</TabsTrigger>
-            <TabsTrigger value="faq">Frequently Asked Questions</TabsTrigger>
+          <TabsList className="flex flex-col md:grid md:grid-cols-3 w-full h-auto mb-8 gap-2 bg-transparent md:bg-muted p-0 md:p-1">
+            <TabsTrigger value="documents" className="w-full data-[state=active]:bg-primary data-[state=active]:text-primary-foreground md:data-[state=active]:bg-background md:data-[state=active]:text-foreground border md:border-none rounded-md py-3 md:py-1.5">Documentation</TabsTrigger>
+            <TabsTrigger value="standards" className="w-full data-[state=active]:bg-primary data-[state=active]:text-primary-foreground md:data-[state=active]:bg-background md:data-[state=active]:text-foreground border md:border-none rounded-md py-3 md:py-1.5">Standards</TabsTrigger>
+            <TabsTrigger value="faq" className="w-full data-[state=active]:bg-primary data-[state=active]:text-primary-foreground md:data-[state=active]:bg-background md:data-[state=active]:text-foreground border md:border-none rounded-md py-3 md:py-1.5">Frequently Asked Questions</TabsTrigger>
           </TabsList>
           
           <TabsContent value="documents" className="space-y-10">
