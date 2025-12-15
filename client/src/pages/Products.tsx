@@ -202,7 +202,7 @@ export default function Products() {
                   ].map((color) => (
                     <div key={color.name} className="flex items-center gap-3">
                       <div 
-                        className="h-12 w-12 rounded-full border border-border shadow-sm"
+                        className="h-12 w-12 shrink-0 rounded-full border border-border shadow-sm"
                         style={{ backgroundColor: color.hex }}
                       />
                       <span className="text-sm font-medium">{color.name}</span>
@@ -222,7 +222,7 @@ export default function Products() {
                   ].map((color) => (
                     <div key={color.name} className="flex items-center gap-3">
                       <div 
-                        className="h-12 w-12 rounded-full border border-border shadow-sm"
+                        className="h-12 w-12 shrink-0 rounded-full border border-border shadow-sm"
                         style={{ backgroundColor: color.hex }}
                       />
                       <span className="text-sm font-medium">{color.name}</span>
@@ -240,7 +240,7 @@ export default function Products() {
                   ].map((color) => (
                     <div key={color.name} className="flex items-center gap-3">
                       <div 
-                        className={`h-12 w-12 rounded-full shadow-sm overflow-hidden ${color.border ? 'border border-gray-300' : ''}`}
+                        className={`h-12 w-12 shrink-0 rounded-full shadow-sm overflow-hidden ${color.border ? 'border border-gray-300' : ''}`}
                       >
                         <img 
                           src={color.image} 
