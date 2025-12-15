@@ -45,7 +45,14 @@ export default function Technology() {
                   <span className="text-muted-foreground">Flame Retardant</span>
                   <span className="font-medium">BS 5867</span>
                 </li>
-             <li className="flex items-center justify-between border-b pb-2">\n                  <span className="text-muted-foreground">Fungi/Mold</span>\n                  <span className="font-medium">AATCC 30</span>\n                </li>\n                <li className="flex items-center justify-between pt-1">\n                  <span className="text-muted-foreground">Sprinkler</span>\n                  <span className="font-medium">NFPA 13</span>\n                </li>
+                <li className="flex items-center justify-between border-b pb-2">
+                  <span className="text-muted-foreground">Fungi/Mold</span>
+                  <span className="font-medium">AATCC 30</span>
+                </li>
+                <li className="flex items-center justify-between pt-1">
+                  <span className="text-muted-foreground">Sprinkler</span>
+                  <span className="font-medium">NFPA 13</span>
+                </li>
               </ul>
             </div>
 
@@ -181,7 +188,13 @@ export default function Technology() {
                         <div className="h-8 w-8 rounded-full bg-secondary/20 flex items-center justify-center">
                           <FileText className="h-4 w-4 text-secondary" />
                         </div>
-                        <span className="font-medium">Water-based formula (Environmentally Conscious)</span>\n                      </li>\n                      <li className="flex items-center gap-3">\n                        <div className="h-8 w-8 rounded-full bg-secondary/20 flex items-center justify-center">\n                          <FileText className="h-4 w-4 text-secondary" />\n                        </div>\n                        <span className="font-medium">Lower Carbon Footprint than Laundry</span>
+                        <span className="font-medium">Water-based formula (Environmentally Conscious)</span>
+                      </li>
+                      <li className="flex items-center gap-3">
+                        <div className="h-8 w-8 rounded-full bg-secondary/20 flex items-center justify-center">
+                          <FileText className="h-4 w-4 text-secondary" />
+                        </div>
+                        <span className="font-medium">Lower Carbon Footprint than Laundry</span>
                       </li>
                     </ul>
                   </div>

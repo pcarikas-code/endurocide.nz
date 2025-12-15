@@ -45,9 +45,9 @@ export default function Home() {
               <Shield className="h-4 w-4" />
               <span>Proven Infection Control</span>
             </div>
-            <img src="/logo.webp" alt="Endurocide® NZ Logo" className="h-16 w-auto mb-4" />
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-foreground leading-tight">
-              The Future of <span className="text-primary">Hospital Hygiene</span>
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-foreground leading-tight flex flex-col gap-4">
+              <img src="/logo.webp" alt="Endurocide® NZ Logo" className="h-16 w-auto self-start" />
+              <span>The Future of <span className="text-primary">Hospital Hygiene</span></span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
               Endurocide® disposable curtains are impregnated with a patented liquid formulation that traps and kills bacteria on contact.
