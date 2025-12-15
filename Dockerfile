@@ -9,7 +9,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install ALL dependencies (needed for build and runtime with --packages=external)
-RUN npm install
+RUN npm install --legacy-peer-deps
 
 # Copy source code
 COPY . .
@@ -25,7 +25,7 @@ WORKDIR /app
 # Copy package files and install ALL dependencies
 # Note: We need all deps because esbuild uses --packages=external
 COPY package*.json ./
-RUN npm install
+RUN npm install --legacy-peer-deps
 
 # Copy built application from builder stage
 COPY --from=builder /app/dist ./dist
