@@ -23,7 +23,7 @@ echo "▶️  Starting new container..."
 docker run -d \
   --name $CONTAINER_NAME \
   --restart unless-stopped \
-  -p $PORT:80 \
+  -p $PORT:3000 \
   $IMAGE_NAME:$TAG
 
 if [ $? -eq 0 ]; then
