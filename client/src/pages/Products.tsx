@@ -125,6 +125,52 @@ export default function Products() {
           ))}
         </div>
 
+        {/* Sizes Card */}
+        <div className="bg-card rounded-xl border shadow-sm overflow-hidden mb-12">
+          <div className="p-6 border-b bg-muted/30">
+            <h3 className="text-2xl font-bold text-primary">Sizes</h3>
+            <p className="text-muted-foreground mt-2">Available dimensions for all curtain types.</p>
+          </div>
+          <div className="overflow-x-auto">
+            <Table>
+              <TableHeader>
+                <TableRow className="hover:bg-transparent">
+                  <TableHead className="w-[200px]">Dimension</TableHead>
+                  <TableHead className="text-center font-bold text-primary">Standard</TableHead>
+                  <TableHead className="text-center font-bold text-primary">Mesh Top</TableHead>
+                  <TableHead className="text-center font-bold text-primary">Long Drop</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                <TableRow>
+                  <TableCell className="font-medium">Height</TableCell>
+                  <TableCell className="text-center">2.0m</TableCell>
+                  <TableCell className="text-center">2.55m</TableCell>
+                  <TableCell className="text-center">2.6m</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell className="font-medium">Full Width</TableCell>
+                  <TableCell className="text-center">7.5m</TableCell>
+                  <TableCell className="text-center">7.5m</TableCell>
+                  <TableCell className="text-center">7.5m</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell className="font-medium">Medium Width</TableCell>
+                  <TableCell className="text-center">5.55m</TableCell>
+                  <TableCell className="text-center">5.55m</TableCell>
+                  <TableCell className="text-center">5.55m</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell className="font-medium">Half Width</TableCell>
+                  <TableCell className="text-center">3.75m</TableCell>
+                  <TableCell className="text-center">3.75m</TableCell>
+                  <TableCell className="text-center">3.75m</TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
+          </div>
+        </div>
+
         {/* Comparison Table */}
         <div className="bg-card rounded-xl border shadow-sm overflow-hidden mb-12">
           <div className="p-6 border-b bg-muted/30">
