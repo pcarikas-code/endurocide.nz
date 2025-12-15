@@ -12,7 +12,7 @@ export default function Technology() {
         <div className="container text-center max-w-4xl">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Patented Protection</h1>
           <p className="text-xl text-blue-100 leading-relaxed">
-            Endurocide® isn't just a curtain—it's a sophisticated medical device designed to break the chain of infection.
+            Endurocide® isn't just a curtain—it's a sophisticated medical device designed to break the chain of infection. With a patented water-based formula, it remains effective for up to two years.
           </p>
         </div>
       </div>
@@ -39,10 +39,7 @@ export default function Technology() {
                   <span className="text-muted-foreground">Flame Retardant</span>
                   <span className="font-medium">BS 5867</span>
                 </li>
-                <li className="flex items-center justify-between pt-1">
-                  <span className="text-muted-foreground">Fungi/Mold</span>
-                  <span className="font-medium">AATCC 30</span>
-                </li>
+             <li className="flex items-center justify-between border-b pb-2">\n                  <span className="text-muted-foreground">Fungi/Mold</span>\n                  <span className="font-medium">AATCC 30</span>\n                </li>\n                <li className="flex items-center justify-between pt-1">\n                  <span className="text-muted-foreground">Sprinkler</span>\n                  <span className="font-medium">NFPA 13</span>\n                </li>
               </ul>
             </div>
 
@@ -78,7 +75,7 @@ export default function Technology() {
                 <div className="prose max-w-none text-muted-foreground">
                   <h2 className="text-2xl font-bold text-foreground mb-4">How It Works</h2>
                   <p className="mb-6">
-                    Unlike standard antimicrobial treatments that only work when bacteria are wet, Endurocide® uses a patented "Trap & Kill" technology that remains active even on dry surfaces.
+                    Unlike standard antimicrobial treatments that only work when bacteria are wet, Endurocide® uses a patented "Trap & Kill" technology that remains active even on dry surfaces. Our water-based formula creates a durable defense layer that lasts for up to two years.
                   </p>
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
@@ -178,7 +175,7 @@ export default function Technology() {
                         <div className="h-8 w-8 rounded-full bg-secondary/20 flex items-center justify-center">
                           <FileText className="h-4 w-4 text-secondary" />
                         </div>
-                        <span className="font-medium">Lower Carbon Footprint than Laundry</span>
+                        <span className="font-medium">Water-based formula (Environmentally Conscious)</span>\n                      </li>\n                      <li className="flex items-center gap-3">\n                        <div className="h-8 w-8 rounded-full bg-secondary/20 flex items-center justify-center">\n                          <FileText className="h-4 w-4 text-secondary" />\n                        </div>\n                        <span className="font-medium">Lower Carbon Footprint than Laundry</span>
                       </li>
                     </ul>
                   </div>
