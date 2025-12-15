@@ -1,38 +1,19 @@
-import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { z } from "zod";
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
-import { toast } from "sonner";
-
-const formSchema = z.object({
-  name: z.string().min(2, "Name must be at least 2 characters"),
-  email: z.string().email("Invalid email address"),
-  company: z.string().min(2, "Company name is required"),
-  message: z.string().min(10, "Message must be at least 10 characters"),
-});
+import { Phone, Mail, Clock } from "lucide-react";
+import { useEffect } from "react";
 
 export default function Contact() {
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
-    defaultValues: {
-      name: "",
-      email: "",
-      company: "",
-      message: "",
-    },
-  });
+  useEffect(() => {
+    // Load Prospect CRM form script
+    const script = document.createElement("script");
+    script.src = "https://userresources.prospect365.com/forms/QXZhbiBNZWR2ZWRldkFudvUt0fK4t19xECQqo5SOegDfVln3lg==/5/form.js";
+    script.defer = true;
+    document.body.appendChild(script);
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-    toast.success("Message sent successfully! We'll get back to you shortly.");
-    form.reset();
-  }
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
     <div className="min-h-screen bg-muted/30 py-12">
@@ -88,72 +69,11 @@ export default function Contact() {
                 <CardTitle className="text-xl font-bold text-primary">Send us a Message</CardTitle>
               </CardHeader>
               <CardContent>
-                <Form {...form}>
-                  <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <FormField
-                        control={form.control}
-                        name="name"
-                        render={({ field }) => (
-                          <FormItem>
-                            <FormLabel>Name</FormLabel>
-                            <FormControl>
-                              <Input placeholder="John Doe" {...field} />
-                            </FormControl>
-                            <FormMessage />
-                          </FormItem>
-                        )}
-                      />
-                      <FormField
-                        control={form.control}
-                        name="email"
-                        render={({ field }) => (
-                          <FormItem>
-                            <FormLabel>Email</FormLabel>
-                            <FormControl>
-                              <Input placeholder="john@hospital.com" {...field} />
-                            </FormControl>
-                            <FormMessage />
-                          </FormItem>
-                        )}
-                      />
-                    </div>
-                    
-                    <FormField
-                      control={form.control}
-                      name="company"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>Company / Hospital</FormLabel>
-                          <FormControl>
-                            <Input placeholder="General Hospital" {...field} />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-
-                    <FormField
-                      control={form.control}
-                      name="message"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>Message</FormLabel>
-                          <FormControl>
-                            <Textarea 
-                              placeholder="Tell us about your requirements..." 
-                              className="min-h-[150px]"
-                              {...field} 
-                            />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-
-                    <Button type="submit" className="w-full md:w-auto px-8">Send Message</Button>
-                  </form>
-                </Form>
+                <div id="prospect-form-5">
+                  <div className="prospect-form-loading flex justify-center items-center py-12">
+                    <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
+                  </div>
+                </div>
               </CardContent>
             </Card>
           </div>
