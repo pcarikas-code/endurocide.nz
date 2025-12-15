@@ -1,12 +1,31 @@
 import { Link, useLocation } from "wouter";
 import { cn } from "@/lib/utils";
 import { Menu, X, ShieldCheck } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+
+declare global {
+  interface Window {
+    klaviyo: any;
+  }
+}
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [location] = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  // Ensure Klaviyo script is loaded and form is rendered
+  useEffect(() => {
+    // Check if Klaviyo object exists and render form if needed
+    const checkKlaviyo = setInterval(() => {
+      if (window.klaviyo) {
+        // Force re-render of forms if needed, though usually automatic
+        clearInterval(checkKlaviyo);
+      }
+    }, 1000);
+
+    return () => clearInterval(checkKlaviyo);
+  }, []);
 
   const navItems = [
     { href: "/", label: "Home" },

@@ -6,122 +6,123 @@
   width: 100%;
 }
 
-/* Override Shadow DOM styles if possible, otherwise these target light DOM elements */
-#prospect-form-5 form.prospect-form {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-  width: 100%;
+/* Force grid layout on the form element itself */
+#prospect-form-5 form,
+form.prospect-form {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 1.5rem !important;
+  width: 100% !important;
 }
 
 /* Labels */
-#prospect-form-5 label.prospect-form-text-label {
-  display: block;
-  font-size: 0.875rem;
-  font-weight: 500;
-  line-height: 1.25rem;
-  color: hsl(var(--foreground));
-  margin-bottom: 0.5rem;
-  margin-right: 0; /* Override default */
+#prospect-form-5 label,
+.prospect-form-text-label {
+  display: block !important;
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
+  line-height: 1.25rem !important;
+  color: hsl(var(--foreground)) !important;
+  margin-bottom: 0.5rem !important;
+  margin-right: 0 !important;
 }
 
-#prospect-form-5 .prospect-form-required {
-  color: hsl(var(--destructive));
-  margin-left: 0.25rem;
+.prospect-form-required {
+  color: hsl(var(--destructive)) !important;
+  margin-left: 0.25rem !important;
 }
 
 /* Inputs and Textareas */
-#prospect-form-5 input.form-control,
-#prospect-form-5 select.form-control,
-#prospect-form-5 textarea.form-control {
-  display: flex;
-  width: 100%;
-  height: 2.5rem;
-  padding: 0.5rem 0.75rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  color: hsl(var(--foreground));
-  background-color: hsl(var(--background));
-  border: 1px solid hsl(var(--input));
-  border-radius: calc(var(--radius) - 2px);
-  transition: border-color 0.2s, box-shadow 0.2s;
-  box-shadow: none; /* Override default */
-  font-family: inherit; /* Override default */
+#prospect-form-5 input[type="text"],
+#prospect-form-5 input[type="email"],
+#prospect-form-5 input[type="tel"],
+#prospect-form-5 select,
+#prospect-form-5 textarea,
+.form-control {
+  display: flex !important;
+  width: 100% !important;
+  height: 2.5rem !important;
+  padding: 0.5rem 0.75rem !important;
+  font-size: 0.875rem !important;
+  line-height: 1.25rem !important;
+  color: hsl(var(--foreground)) !important;
+  background-color: hsl(var(--background)) !important;
+  border: 1px solid hsl(var(--input)) !important;
+  border-radius: calc(var(--radius) - 2px) !important;
+  transition: border-color 0.2s, box-shadow 0.2s !important;
+  box-shadow: none !important;
+  font-family: inherit !important;
+  margin: 0 !important;
 }
 
-#prospect-form-5 textarea.form-control {
-  height: auto;
-  min-height: 120px;
+#prospect-form-5 textarea,
+textarea.form-control {
+  height: auto !important;
+  min-height: 120px !important;
 }
 
-#prospect-form-5 input.form-control:focus,
-#prospect-form-5 select.form-control:focus,
-#prospect-form-5 textarea.form-control:focus {
-  outline: 2px solid transparent !important; /* Override default */
-  outline-offset: 2px;
-  border-color: hsl(var(--ring));
-  box-shadow: 0 0 0 2px hsl(var(--background)), 0 0 0 4px hsl(var(--ring));
+#prospect-form-5 input:focus,
+#prospect-form-5 select:focus,
+#prospect-form-5 textarea:focus {
+  outline: 2px solid transparent !important;
+  outline-offset: 2px !important;
+  border-color: hsl(var(--ring)) !important;
+  box-shadow: 0 0 0 2px hsl(var(--background)), 0 0 0 4px hsl(var(--ring)) !important;
 }
 
 /* Submit Button */
-#prospect-form-5 button.prospect-form-submit {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  white-space: nowrap;
-  border-radius: calc(var(--radius) - 2px);
-  font-size: 0.875rem;
-  font-weight: 500;
-  height: 2.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  color: hsl(var(--primary-foreground));
-  background-color: hsl(var(--primary));
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.2s;
-  width: 100%;
-  margin-top: 1rem;
-  justify-self: stretch; /* Override default */
+#prospect-form-5 button[type="submit"],
+button.prospect-form-submit {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  white-space: nowrap !important;
+  border-radius: calc(var(--radius) - 2px) !important;
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
+  height: 2.5rem !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  color: hsl(var(--primary-foreground)) !important;
+  background-color: hsl(var(--primary)) !important;
+  border: none !important;
+  cursor: pointer !important;
+  transition: background-color 0.2s !important;
+  width: 100% !important;
+  margin-top: 1rem !important;
 }
 
-#prospect-form-5 button.prospect-form-submit:hover {
-  background-color: hsl(var(--primary) / 0.9);
-}
-
-#prospect-form-5 button.prospect-form-submit:disabled {
-  opacity: 0.7;
-  cursor: not-allowed;
+#prospect-form-5 button[type="submit"]:hover,
+button.prospect-form-submit:hover {
+  background-color: hsl(var(--primary) / 0.9) !important;
 }
 
 /* Error Messages */
-#prospect-form-5 .prospect-form-error {
-  color: hsl(var(--destructive));
-  font-size: 0.875rem;
-  margin-top: 0.5rem;
-  text-align: center;
-}
-
-/* Layout adjustments */
-#prospect-form-5 label + input,
-#prospect-form-5 label + select,
-#prospect-form-5 label + textarea {
-  margin-top: 0; /* Override default */
-  margin-bottom: 0; /* Override default */
+.prospect-form-error {
+  color: hsl(var(--destructive)) !important;
+  font-size: 0.875rem !important;
+  margin-top: 0.5rem !important;
+  text-align: center !important;
 }
 
 /* Responsive adjustments */
 @media (min-width: 768px) {
-  #prospect-form-5 form.prospect-form {
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
+  #prospect-form-5 form,
+  form.prospect-form {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 1.5rem !important;
   }
 
   /* Make full width elements span both columns */
-  #prospect-form-5 label[for*="Requirements"],
-  #prospect-form-5 input[name*="Requirements"],
-  #prospect-form-5 button.prospect-form-submit,
-  #prospect-form-5 .prospect-form-error {
-    grid-column: 1 / -1;
+  #prospect-form-5 .full-width,
+  #prospect-form-5 button[type="submit"] {
+    grid-column: 1 / -1 !important;
+  }
+  
+  /* Target specific fields that should be full width based on the screenshot */
+  /* Usually the last few fields like 'Short Description' are full width */
+  #prospect-form-5 > form > div:nth-last-child(2),
+  #prospect-form-5 > form > div:nth-last-child(3) {
+     grid-column: 1 / -1 !important;
   }
 }
