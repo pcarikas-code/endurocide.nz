@@ -63,23 +63,46 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
         {/* Mobile Nav */}
         {isMobileMenuOpen && (
-          <div className="md:hidden border-b bg-background p-4 space-y-4">
-            {navItems.map((item) => (
-              <Link key={item.href} href={item.href}>
-                <div
-                  className={cn(
-                    "block py-3 px-4 text-base font-medium cursor-pointer rounded-md hover:bg-muted transition-colors",
-                    location === item.href
-                      ? "text-primary bg-primary/5"
-                      : "text-muted-foreground"
-                  )}
+          <div className="md:hidden fixed inset-0 top-16 z-50 bg-background border-t flex flex-col overflow-y-auto">
+            <div className="p-4 space-y-2 flex-1">
+              {navItems.map((item) => (
+                <Link key={item.href} href={item.href}>
+                  <div
+                    className={cn(
+                      "block py-4 px-4 text-lg font-medium cursor-pointer rounded-lg hover:bg-muted transition-colors border-b border-border/40 last:border-0",
+                      location === item.href
+                        ? "text-primary bg-primary/5 border-transparent"
+                        : "text-foreground"
+                    )}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {item.label}
+                  </div>
+                </Link>
+              ))}
+            </div>
+            
+            <div className="p-6 bg-muted/30 border-t space-y-6">
+              <Link href="/contact">
+                <Button 
+                  className="w-full h-12 text-base font-semibold shadow-md" 
+                  size="lg"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  {item.label}
-                </div>
+                  Request a Quote
+                </Button>
               </Link>
-            ))}
-
+              
+              <div className="space-y-3 text-center">
+                <p className="text-sm font-medium text-muted-foreground">Contact Us</p>
+                <a href="tel:+642102966718" className="block text-lg font-semibold text-primary hover:underline">
+                  +64 (0)21 029 66718
+                </a>
+                <a href="mailto:info@endurocide.nz" className="block text-base text-muted-foreground hover:text-foreground transition-colors">
+                  info@endurocide.nz
+                </a>
+              </div>
+            </div>
           </div>
         )}
       </header>
