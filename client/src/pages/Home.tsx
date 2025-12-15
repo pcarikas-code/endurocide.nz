@@ -29,7 +29,7 @@ export default function Home() {
         }}
       />
       {/* Hero Section */}
-      <section className="relative h-[600px] flex items-center justify-center overflow-hidden bg-muted">
+      <section className="relative h-[500px] flex items-center justify-center overflow-hidden bg-muted">
         <div className="absolute inset-0 z-0">
           <img 
             src="/images/hero-curtain-flipped.webp" 
