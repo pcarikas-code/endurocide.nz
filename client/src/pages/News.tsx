@@ -1,9 +1,13 @@
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Calendar, ArrowRight } from "lucide-react";
+import { Calendar, ArrowRight, Filter } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { useState } from "react";
+import { cn } from "@/lib/utils";
 
 export default function News() {
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+
   const blogPosts = [
     {
       title: "The Overlooked Vector: Mitigating HAIs with Advanced Privacy Curtains",
@@ -49,18 +53,44 @@ export default function News() {
     }
   ];
 
+  const categories = Array.from(new Set(blogPosts.map(post => post.category)));
+  const filteredPosts = selectedCategory 
+    ? blogPosts.filter(post => post.category === selectedCategory)
+    : blogPosts;
+
   return (
     <div className="min-h-screen bg-background py-12">
       <div className="container">
-        <div className="max-w-3xl mx-auto text-center mb-16">
+        <div className="max-w-3xl mx-auto text-center mb-12">
           <h1 className="text-4xl font-bold tracking-tight text-foreground mb-4">Insights & Updates</h1>
           <p className="text-lg text-muted-foreground">
             Latest perspectives on infection control, clinical research, and healthcare innovation.
           </p>
         </div>
 
+        {/* Category Filter */}
+        <div className="flex flex-wrap justify-center gap-2 mb-12">
+          <Button
+            variant={selectedCategory === null ? "default" : "outline"}
+            onClick={() => setSelectedCategory(null)}
+            className="rounded-full"
+          >
+            All
+          </Button>
+          {categories.map((category) => (
+            <Button
+              key={category}
+              variant={selectedCategory === category ? "default" : "outline"}
+              onClick={() => setSelectedCategory(category)}
+              className="rounded-full"
+            >
+              {category}
+            </Button>
+          ))}
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {blogPosts.map((post, index) => (
+          {filteredPosts.map((post, index) => (
             <Card key={index} className="flex flex-col h-full hover:shadow-lg transition-all duration-300 border-muted">
               <CardHeader>
                 <div className="flex items-center justify-between mb-4">
