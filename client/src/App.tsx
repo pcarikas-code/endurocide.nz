@@ -11,7 +11,8 @@ import Products from "./pages/Products";
 import Technology from "./pages/Technology";
 import ProductGuides from "./pages/ProductGuides";
 import ClinicalStudies from "./pages/ClinicalStudies";
-import News from "./pages/News";
+import News from "@/pages/News";
+import Article from "@/pages/Article";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import ThankYou from "./pages/ThankYou";
@@ -27,6 +28,7 @@ function Router() {
         <Route path="/guides" component={ProductGuides} />
         <Route path="/studies" component={ClinicalStudies} />
         <Route path="/news" component={News} />
+      <Route path="/news/:slug" component={Article} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
         <Route path="/thank-you" component={ThankYou} />
