@@ -21,6 +21,14 @@ export default function Products() {
       features: ["Sprinkler compliant", "Enhanced airflow", "Antimicrobial fabric", "Various drop lengths"],
       image: "/images/hospital-corridor.jpg",
       tag: "Safety Compliant"
+    },
+    {
+      id: "long-drop-curtain",
+      title: "Long Drop Curtain",
+      description: "Extra length curtains designed for high ceilings or specific ward requirements. Maintains full antimicrobial protection.",
+      features: ["Extended length options", "Customizable drop", "Same patented formula", "Ideal for high ceilings"],
+      image: "/images/hero-curtain.jpg", // Reusing hero image
+      tag: "Specialist"
     }
   ];
 
