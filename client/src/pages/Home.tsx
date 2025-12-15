@@ -41,6 +41,7 @@ export default function Home() {
         
         <div className="container relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 max-w-2xl">
+            <img src="/logo.webp" alt="Endurocide® NZ Logo" className="h-16 w-auto mb-4" />
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/10 text-secondary font-medium text-sm border border-secondary/20">
               <Shield className="h-4 w-4" />
               <span>Proven Infection Control</span>

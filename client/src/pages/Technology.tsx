@@ -120,8 +120,8 @@ export default function Technology() {
                     Endurocide® has been tested against a wide range of hospital-acquired pathogens.
                   </p>
 
-                  <div className="overflow-hidden rounded-xl border">
-                    <table className="w-full text-sm text-left">
+                  <div className="overflow-hidden rounded-xl border overflow-x-auto">
+                    <table className="w-full text-sm text-left min-w-[300px]">
                       <thead className="bg-muted text-foreground font-semibold">
                         <tr>
                           <th className="p-4">Pathogen</th>
