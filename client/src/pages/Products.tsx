@@ -83,8 +83,8 @@ export default function Products() {
           }))
         }}
       />
-      <div className="container">
-        <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
+      <div className="container max-w-[1000px] mx-auto px-4 md:px-8">
+        <div className="max-w-[1000px] mx-auto text-center mb-16 space-y-4">
           <h1 className="text-4xl font-bold tracking-tight text-foreground">Product Range</h1>
           <p className="text-lg text-muted-foreground">
             Explore our range of infection control solutions designed for modern healthcare facilities.

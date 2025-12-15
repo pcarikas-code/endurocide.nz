@@ -13,7 +13,7 @@ export default function About() {
       />
       {/* Hero */}
       <div className="bg-muted py-20">
-        <div className="container text-center max-w-4xl">
+        <div className="container max-w-[1000px] mx-auto px-4 md:px-8 text-center">
           <h1 className="text-4xl font-bold text-foreground mb-6">About Endurocide® New Zealand</h1>
           <p className="text-xl text-muted-foreground leading-relaxed">
             Dedicated to breaking the chain of infection in healthcare settings.
@@ -21,7 +21,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="container py-16 space-y-20">
+      <div className="container max-w-[1000px] mx-auto px-4 md:px-8 py-16 space-y-20">
         {/* Main Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div className="space-y-6">

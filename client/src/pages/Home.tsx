@@ -39,7 +39,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/60 to-transparent"></div>
         </div>
         
-        <div className="container relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="container relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-[1000px] mx-auto px-4 md:px-8">
           <div className="space-y-6 max-w-2xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/10 text-secondary font-medium text-sm border border-secondary/20">
               <Shield className="h-4 w-4" />
@@ -70,7 +70,7 @@ export default function Home() {
 
       {/* Key Benefits Section */}
       <section className="py-24 bg-background">
-        <div className="container">
+        <div className="container max-w-[1000px] mx-auto px-4 md:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl font-bold mb-4">Why Choose Endurocide®?</h2>
             <p className="text-muted-foreground text-lg">
@@ -120,7 +120,7 @@ export default function Home() {
 
       {/* Technology Highlight */}
       <section className="py-24 bg-muted overflow-hidden">
-        <div className="container">
+        <div className="container max-w-[1000px] mx-auto px-4 md:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1 relative">
               <div className="absolute -inset-4 bg-primary/5 rounded-3xl transform -rotate-2"></div>
@@ -162,7 +162,7 @@ export default function Home() {
 
       {/* CTA Section */}
       <section className="py-24 bg-primary text-primary-foreground">
-        <div className="container text-center max-w-4xl mx-auto space-y-8">
+        <div className="container max-w-[1000px] mx-auto px-4 md:px-8 text-center space-y-8">
           <h2 className="text-3xl md:text-4xl font-bold text-white">Ready to Upgrade Your Infection Control?</h2>
           <p className="text-xl text-blue-100 leading-relaxed">
             Contact us today to request a sample or discuss how Endurocide® can improve safety in your facility.

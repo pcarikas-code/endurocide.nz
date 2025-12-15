@@ -12,8 +12,8 @@ export default function ClinicalStudies() {
         description="Review independent laboratory reports and clinical studies validating Endurocide's efficacy against MRSA, C.difficile, E.coli, and other pathogens."
         keywords="clinical studies, antimicrobial testing, hospital curtain efficacy, independent lab reports, infection control data"
       />
-      <div className="container">
-        <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
+      <div className="container max-w-[1000px] mx-auto px-4 md:px-8">
+        <div className="max-w-[1000px] mx-auto text-center mb-16 space-y-4">
           <h1 className="text-4xl font-bold tracking-tight text-foreground">Clinical Validation</h1>
           <p className="text-lg text-muted-foreground">
             Endurocide® curtains are backed by independent laboratory testing and peer-reviewed clinical studies demonstrating proven efficacy against hospital-acquired infections.

@@ -15,7 +15,7 @@ export default function Technology() {
       />
       {/* Header */}
       <div className="bg-primary py-20 text-primary-foreground">
-        <div className="container text-center max-w-4xl">
+        <div className="container max-w-[1000px] mx-auto px-4 md:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Patented Protection</h1>
           <p className="text-xl text-blue-100 leading-relaxed">
             Endurocide® isn't just a curtain—it's a sophisticated medical device designed to break the chain of infection. With a patented water-based formula, it remains effective for up to two years.
@@ -23,7 +23,7 @@ export default function Technology() {
         </div>
       </div>
 
-      <div className="container py-16">
+      <div className="container max-w-[1000px] mx-auto px-4 md:px-8 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {/* Sidebar Navigation for Tech Specs */}
           <div className="lg:col-span-1 space-y-8">
@@ -212,7 +212,7 @@ export default function Technology() {
 
       {/* Download Section */}
       <section className="bg-muted py-16">
-        <div className="container text-center">
+        <div className="container max-w-[1000px] mx-auto px-4 md:px-8 text-center">
           <h2 className="text-2xl font-bold mb-8">Technical Resources</h2>
           <div className="flex flex-wrap justify-center gap-4">
             <Button variant="outline" className="bg-white">

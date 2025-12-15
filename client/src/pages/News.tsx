@@ -81,8 +81,8 @@ export default function News() {
           }))
         }}
       />
-      <div className="container">
-        <div className="max-w-3xl mx-auto text-center mb-12">
+      <div className="container max-w-[1000px] mx-auto px-4 md:px-8">
+        <div className="max-w-[1000px] mx-auto text-center mb-12">
           <h1 className="text-4xl font-bold tracking-tight text-foreground mb-4">Insights & Updates</h1>
           <p className="text-lg text-muted-foreground">
             Latest perspectives on infection control, clinical research, and healthcare innovation.
