@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { FileText, Download, PlayCircle, Info, AlertTriangle, CheckCircle2 } from "lucide-react";
+import { FileText, Download, PlayCircle, Info, AlertTriangle, CheckCircle2, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "wouter";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import SEO from "@/components/SEO";
@@ -98,10 +99,12 @@ export default function ProductGuides() {
                       <CardContent>
                         <div className="flex items-center justify-between pt-2 border-t mt-2">
                           <span className="text-xs text-muted-foreground font-medium">{item.size}</span>
-                          <Button variant="ghost" size="sm" className="gap-2 h-8 text-primary hover:text-primary hover:bg-primary/10">
-                            <Download className="h-4 w-4" />
-                            Download
-                          </Button>
+                          <Link href="/contact">
+                            <Button variant="ghost" size="sm" className="gap-2 h-8 text-primary hover:text-primary hover:bg-primary/10">
+                              <Mail className="h-4 w-4" />
+                              Request Copy
+                            </Button>
+                          </Link>
                         </div>
                       </CardContent>
                     </Card>
