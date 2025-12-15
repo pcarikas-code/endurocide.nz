@@ -52,24 +52,13 @@ export default function Contact() {
                 <CardTitle className="text-xl font-bold text-primary">Contact Information</CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <MapPin className="h-6 w-6 text-primary shrink-0 mt-1" />
-                  <div>
-                    <h4 className="font-semibold text-foreground">Head Office</h4>
-                    <p className="text-sm text-muted-foreground">
-                      Bio Technics Ltd.<br />
-                      Linton Business Park<br />
-                      Gourdon, Aberdeenshire<br />
-                      DD10 0NH, UK
-                    </p>
-                  </div>
-                </div>
+                  {/* Address removed as per request */}
                 
                 <div className="flex items-start gap-4">
                   <Phone className="h-6 w-6 text-primary shrink-0 mt-1" />
                   <div>
                     <h4 className="font-semibold text-foreground">Phone</h4>
-                    <p className="text-sm text-muted-foreground">+44 (0) 1561 361515</p>
+                    <p className="text-sm text-muted-foreground">+64 (0)21 029 66718</p>
                   </div>
                 </div>
 
@@ -77,7 +66,7 @@ export default function Contact() {
                   <Mail className="h-6 w-6 text-primary shrink-0 mt-1" />
                   <div>
                     <h4 className="font-semibold text-foreground">Email</h4>
-                    <p className="text-sm text-muted-foreground">info@endurocide.com</p>
+                    <p className="text-sm text-muted-foreground">info@endurocide.nz</p>
                   </div>
                 </div>
 

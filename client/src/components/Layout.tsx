@@ -118,9 +118,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <div>
             <h4 className="font-semibold mb-4 text-foreground">Contact</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>info@endurocide.com</li>
-              <li>+44 (0) 123 456 789</li>
-              <li>Edinburgh, UK</li>
+              <li>info@endurocide.nz</li>
+              <li>+64 (0)21 029 66718</li>
             </ul>
           </div>
         </div>
