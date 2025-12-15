@@ -1,0 +1,94 @@
+/* Prospect CRM Form Custom Styling */
+
+/* Form Container */
+#prospect-form-5 {
+  font-family: inherit;
+  width: 100%;
+}
+
+/* Form Groups */
+#prospect-form-5 .form-group {
+  margin-bottom: 1.5rem;
+}
+
+/* Labels */
+#prospect-form-5 label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  color: hsl(var(--foreground));
+  margin-bottom: 0.5rem;
+}
+
+/* Inputs and Textareas */
+#prospect-form-5 input[type="text"],
+#prospect-form-5 input[type="email"],
+#prospect-form-5 input[type="tel"],
+#prospect-form-5 select,
+#prospect-form-5 textarea {
+  display: flex;
+  width: 100%;
+  height: 2.5rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: hsl(var(--foreground));
+  background-color: hsl(var(--background));
+  border: 1px solid hsl(var(--input));
+  border-radius: calc(var(--radius) - 2px);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+#prospect-form-5 textarea {
+  height: auto;
+  min-height: 80px;
+}
+
+#prospect-form-5 input:focus,
+#prospect-form-5 select:focus,
+#prospect-form-5 textarea:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  border-color: hsl(var(--ring));
+  box-shadow: 0 0 0 2px hsl(var(--background)), 0 0 0 4px hsl(var(--ring));
+}
+
+/* Submit Button */
+#prospect-form-5 button[type="submit"],
+#prospect-form-5 input[type="submit"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  border-radius: calc(var(--radius) - 2px);
+  font-size: 0.875rem;
+  font-weight: 500;
+  height: 2.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: hsl(var(--primary-foreground));
+  background-color: hsl(var(--primary));
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 100%;
+}
+
+#prospect-form-5 button[type="submit"]:hover,
+#prospect-form-5 input[type="submit"]:hover {
+  background-color: hsl(var(--primary) / 0.9);
+}
+
+/* Error Messages */
+#prospect-form-5 .text-danger {
+  color: hsl(var(--destructive));
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}
+
+/* Required Asterisk */
+#prospect-form-5 .required:after {
+  content: " *";
+  color: hsl(var(--destructive));
+}
