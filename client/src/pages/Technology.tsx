@@ -114,7 +114,7 @@ export default function Technology() {
                 <div className="space-y-6">
                   <h2 className="text-2xl font-bold text-foreground">Tested Pathogens</h2>
                   <p className="text-muted-foreground">
-                    Endurocide has been tested against a wide range of hospital-acquired pathogens.
+                    Endurocide® has been tested against a wide range of hospital-acquired pathogens.
                   </p>
 
                   <div className="overflow-hidden rounded-xl border">
