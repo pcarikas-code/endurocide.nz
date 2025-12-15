@@ -3,9 +3,9 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
-import { ThemeProvider } from "./contexts/ThemeContext";
-import Layout from "./components/Layout";
-import ScrollToTop from "./components/ScrollToTop";
+import { ThemeProvider } from "./components/theme-provider";
+import Layout from "@/components/Layout";
+import ScrollToTop from "@/components/ScrollToTop";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
 import Technology from "./pages/Technology";
@@ -14,6 +14,7 @@ import ClinicalStudies from "./pages/ClinicalStudies";
 import News from "./pages/News";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import ThankYou from "./pages/ThankYou";
 
 function Router() {
   return (
@@ -28,7 +29,7 @@ function Router() {
         <Route path="/news" component={News} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
-        <Route path="/404" component={NotFound} />
+        <Route path="/thank-you" component={ThankYou} />
         <Route component={NotFound} />
       </Switch>
     </Layout>
