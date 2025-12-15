@@ -16,16 +16,30 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   // Ensure Klaviyo script is loaded and form is rendered
   useEffect(() => {
-    // Check if Klaviyo object exists and render form if needed
-    const checkKlaviyo = setInterval(() => {
-      if (window.klaviyo) {
-        // Force re-render of forms if needed, though usually automatic
-        clearInterval(checkKlaviyo);
+    // Function to initialize Klaviyo forms
+    const initKlaviyo = () => {
+      if (window.klaviyo && window.klaviyo.enable) {
+        // Force re-initialization of forms
+        // This is often needed in SPAs when navigating between routes
+        window.klaviyo.enable("VmCrSz");
       }
-    }, 1000);
+    };
 
-    return () => clearInterval(checkKlaviyo);
-  }, []);
+    // Check if script is already loaded
+    if (window.klaviyo) {
+      initKlaviyo();
+    } else {
+      // If not, wait for it
+      const checkKlaviyo = setInterval(() => {
+        if (window.klaviyo) {
+          initKlaviyo();
+          clearInterval(checkKlaviyo);
+        }
+      }, 500);
+      
+      return () => clearInterval(checkKlaviyo);
+    }
+  }, [location]); // Re-run on route change
 
   const navItems = [
     { href: "/", label: "Home" },
