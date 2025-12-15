@@ -87,7 +87,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold text-foreground">100% Recyclable</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Made from 100% polypropylene, our curtains are fully recyclable and eco-friendly.
+                  Made from 100% polypropylene, our curtains are fully recyclable.
                 </p>
               </CardContent>
             </Card>
