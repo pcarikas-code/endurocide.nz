@@ -10,7 +10,7 @@ export default function Home() {
       <section className="relative h-[600px] flex items-center justify-center overflow-hidden bg-muted">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/images/hero-curtain.jpg" 
+            src="/images/hero-curtain-flipped.webp" 
             alt="Endurocide® Antimicrobial Curtains in a hospital room" 
             className="w-full h-full object-cover opacity-90"
           />
