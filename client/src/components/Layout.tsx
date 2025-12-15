@@ -103,8 +103,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <h4 className="font-semibold mb-4 text-foreground">Products</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><Link href="/products"><span className="hover:text-primary cursor-pointer">Antimicrobial Curtains</span></Link></li>
-              <li><Link href="/products"><span className="hover:text-primary cursor-pointer">Window Blinds</span></Link></li>
-              <li><Link href="/products"><span className="hover:text-primary cursor-pointer">Accessories</span></Link></li>
             </ul>
           </div>
 

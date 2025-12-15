@@ -21,14 +21,6 @@ export default function Products() {
       features: ["Sprinkler compliant", "Enhanced airflow", "Antimicrobial fabric", "Various drop lengths"],
       image: "/images/hospital-corridor.jpg",
       tag: "Safety Compliant"
-    },
-    {
-      id: "window-blind",
-      title: "Antimicrobial Roller Blinds",
-      description: "Extend protection to windows with our treated roller blinds. Easy to wipe clean and maintain.",
-      features: ["Custom sizing", "Blackout options", "Easy clean surface", "Chain safety mechanism"],
-      image: "/images/feature-eco.jpg", // Placeholder
-      tag: "New"
     }
   ];
 
