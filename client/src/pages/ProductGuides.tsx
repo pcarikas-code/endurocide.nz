@@ -46,6 +46,18 @@ export default function ProductGuides() {
         title="Product Guides & Installation Instructions"
         description="Download technical brochures, installation guides, and safety data sheets for Endurocide® antimicrobial curtains."
         keywords="product guides, installation instructions, safety data sheet, technical brochure, Endurocide manual"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": faqs.map(faq => ({
+            "@type": "Question",
+            "name": faq.question,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": faq.answer
+            }
+          }))
+        }}
       />
       <div className="container">
         <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
