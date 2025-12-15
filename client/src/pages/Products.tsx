@@ -88,17 +88,7 @@ export default function Products() {
           ))}
         </div>
 
-        <div className="mt-24 bg-white rounded-2xl p-8 md:p-12 shadow-sm border flex flex-col md:flex-row items-center justify-between gap-8">
-          <div className="space-y-4 max-w-xl">
-            <h3 className="text-2xl font-bold text-foreground">Need Custom Specifications?</h3>
-            <p className="text-muted-foreground">
-              We offer bespoke sizing and color options for large orders. Contact our sales team to discuss your facility's specific requirements.
-            </p>
-          </div>
-          <Link href="/contact">
-            <Button size="lg" className="shrink-0">Contact Sales Team</Button>
-          </Link>
-        </div>
+
       </div>
     </div>
   );
