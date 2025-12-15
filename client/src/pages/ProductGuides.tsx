@@ -52,6 +52,7 @@ export default function ProductGuides() {
         <Tabs defaultValue="documents" className="max-w-4xl mx-auto mb-20">
           <TabsList className="grid w-full grid-cols-2 mb-8">
             <TabsTrigger value="documents">Documentation</TabsTrigger>
+            <TabsTrigger value="standards">Standards</TabsTrigger>
             <TabsTrigger value="faq">Frequently Asked Questions</TabsTrigger>
           </TabsList>
           
@@ -94,6 +95,84 @@ export default function ProductGuides() {
 
           </TabsContent>
           
+          <TabsContent value="standards">
+            <div className="grid gap-8">
+              <div className="bg-card rounded-xl border shadow-sm p-8">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="h-12 w-12 rounded-full bg-green-100 flex items-center justify-center shrink-0">
+                    <CheckCircle2 className="h-6 w-6 text-green-600" />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-foreground">Fire Safety Standards</h3>
+                    <p className="text-muted-foreground">Comprehensive flame retardant certification for healthcare environments.</p>
+                  </div>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="space-y-3">
+                    <h4 className="font-semibold text-lg">International Standards</h4>
+                    <ul className="space-y-2">
+                      <li className="flex items-center gap-2 text-sm">
+                        <CheckCircle2 className="h-4 w-4 text-green-600 shrink-0" />
+                        <span>NFPA 701: 2010 (USA & Canada)</span>
+                      </li>
+                      <li className="flex items-center gap-2 text-sm">
+                        <CheckCircle2 className="h-4 w-4 text-green-600 shrink-0" />
+                        <span>BS 5867 Part 2 Types B & C (UK & Europe)</span>
+                      </li>
+                      <li className="flex items-center gap-2 text-sm">
+                        <CheckCircle2 className="h-4 w-4 text-green-600 shrink-0" />
+                        <span>AS 2755.2-1985 (Australia)</span>
+                      </li>
+                      <li className="flex items-center gap-2 text-sm">
+                        <CheckCircle2 className="h-4 w-4 text-green-600 shrink-0" />
+                        <span>AS 1530.2-1993 Part 2 (Australia)</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="bg-muted/30 rounded-lg p-4 text-sm text-muted-foreground">
+                    <p className="mb-2 font-medium text-foreground">Why this matters:</p>
+                    Endurocide® curtains are manufactured from 100% polypropylene which is inherently flame retardant. Unlike treated fabrics that can lose their fire resistance over time or after washing, our curtains maintain their safety profile throughout their lifespan.
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-card rounded-xl border shadow-sm p-8">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center shrink-0">
+                    <CheckCircle2 className="h-6 w-6 text-blue-600" />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-foreground">Antimicrobial Efficacy</h3>
+                    <p className="text-muted-foreground">Proven pathogen reduction standards.</p>
+                  </div>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="space-y-3">
+                    <h4 className="font-semibold text-lg">Testing Standards</h4>
+                    <ul className="space-y-2">
+                      <li className="flex items-center gap-2 text-sm">
+                        <CheckCircle2 className="h-4 w-4 text-blue-600 shrink-0" />
+                        <span>ISO 20743:2013 (Antibacterial Activity)</span>
+                      </li>
+                      <li className="flex items-center gap-2 text-sm">
+                        <CheckCircle2 className="h-4 w-4 text-blue-600 shrink-0" />
+                        <span>AATCC 147 (Bacteriostatic Activity)</span>
+                      </li>
+                      <li className="flex items-center gap-2 text-sm">
+                        <CheckCircle2 className="h-4 w-4 text-blue-600 shrink-0" />
+                        <span>ASTM E2149 (Dynamic Contact Conditions)</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="bg-muted/30 rounded-lg p-4 text-sm text-muted-foreground">
+                    <p className="mb-2 font-medium text-foreground">Sporicidal & Virucidal:</p>
+                    In addition to antibacterial testing, Endurocide® curtains have been independently tested against spores (C. diff) and viruses (H1N1, Coronavirus) to ensure broad-spectrum protection in clinical settings.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </TabsContent>
+
           <TabsContent value="faq">
             <div className="grid gap-6">
               {faqs.map((faq, index) => (
