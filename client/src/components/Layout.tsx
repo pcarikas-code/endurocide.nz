@@ -97,6 +97,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <p className="text-sm text-muted-foreground leading-relaxed">
               Advanced antimicrobial disposable curtains for superior infection control in healthcare environments.
             </p>
+            <p className="text-sm text-muted-foreground leading-relaxed font-medium">
+              Kenco Limited are the official distributors of Endurocide for New Zealand.
+            </p>
           </div>
           
           <div>
