@@ -238,9 +238,9 @@ export default function Products() {
                   {[
                     { name: "Dotty on White", image: "/images/dotty-pattern.jpg", border: true }
                   ].map((color) => (
-                    <div key={color.name} className="flex items-center gap-3">
+                    <div key={color.name} className="flex flex-col sm:flex-row items-start sm:items-center gap-3 w-full">
                       <div 
-                        className={`h-16 w-24 shrink-0 rounded-md shadow-sm overflow-hidden ${color.border ? 'border border-gray-300' : ''}`}
+                        className={`h-48 w-24 shrink-0 rounded-md shadow-sm overflow-hidden ${color.border ? 'border border-gray-300' : ''}`}
                       >
                         <img 
                           src={color.image} 
@@ -248,7 +248,7 @@ export default function Products() {
                           className="w-full h-full object-cover"
                         />
                       </div>
-                      <span className="text-sm font-medium">{color.name}</span>
+                      <span className="text-sm font-medium mt-2 sm:mt-0">{color.name}</span>
                     </div>
                   ))}
                 </div>
