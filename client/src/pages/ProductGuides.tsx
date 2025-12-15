@@ -170,6 +170,37 @@ export default function ProductGuides() {
                   </div>
                 </div>
               </div>
+
+              <div className="bg-card rounded-xl border shadow-sm p-8">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="h-12 w-12 rounded-full bg-purple-100 flex items-center justify-center shrink-0">
+                    <CheckCircle2 className="h-6 w-6 text-purple-600" />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-foreground">Company Accreditation</h3>
+                    <p className="text-muted-foreground">Certified quality and environmental management systems.</p>
+                  </div>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="space-y-3">
+                    <h4 className="font-semibold text-lg">ISO Certifications</h4>
+                    <ul className="space-y-2">
+                      <li className="flex items-center gap-2 text-sm">
+                        <CheckCircle2 className="h-4 w-4 text-purple-600 shrink-0" />
+                        <span>ISO 9001:2015 (Quality Management System)</span>
+                      </li>
+                      <li className="flex items-center gap-2 text-sm">
+                        <CheckCircle2 className="h-4 w-4 text-purple-600 shrink-0" />
+                        <span>ISO 14001:2015 (Environmental Management System)</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="bg-muted/30 rounded-lg p-4 text-sm text-muted-foreground">
+                    <p className="mb-2 font-medium text-foreground">Commitment to Excellence:</p>
+                    Endurocide® is manufactured by Bio Technics Ltd, a UK-based company committed to the highest standards of quality and environmental responsibility. Our ISO accreditations demonstrate our dedication to consistent product quality and sustainable manufacturing practices.
+                  </div>
+                </div>
+              </div>
             </div>
           </TabsContent>
 
