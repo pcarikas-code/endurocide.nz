@@ -25,7 +25,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="container flex h-16 items-center justify-between">
           <Link href="/">
             <div className="flex items-center gap-2 cursor-pointer">
-              <img src="/logo.webp" alt="Endurocide® NZ Logo" className="h-10 w-auto" />
+              <span className="text-2xl font-bold text-primary tracking-tight">Endurocide NZ</span>
             </div>
           </Link>
 
