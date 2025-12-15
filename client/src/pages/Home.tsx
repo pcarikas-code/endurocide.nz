@@ -9,12 +9,12 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       <SEO 
         title="Hospital Curtains & Infection Control Solutions"
-        description="Endurocide® provides patented antimicrobial disposable curtains that kill bacteria on contact. Proven infection control for hospitals and healthcare facilities in New Zealand."
-        keywords="antimicrobial curtains, hospital curtains, infection control, disposable curtains, Endurocide, healthcare hygiene"
+        description="endurocide® provides patented antimicrobial disposable curtains that kill bacteria on contact. Proven infection control for hospitals and healthcare facilities in New Zealand."
+        keywords="antimicrobial curtains, hospital curtains, infection control, disposable curtains, endurocide, healthcare hygiene"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "Organization",
-          "name": "Endurocide New Zealand",
+          "name": "endurocide New Zealand",
           "url": "https://endurocide.nz",
           "logo": "https://endurocide.nz/logo.webp",
           "contactPoint": {
@@ -33,7 +33,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <img 
             src="/images/hero-curtain-flipped.webp" 
-            alt="Endurocide® Antimicrobial Curtains in a hospital room" 
+            alt="endurocide® Antimicrobial Curtains in a hospital room" 
             className="w-full h-full object-cover opacity-90 object-[75%_center] md:object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-white/95 via-white/80 to-transparent/20 md:from-white/90 md:via-white/60 md:to-transparent"></div>
@@ -46,11 +46,11 @@ export default function Home() {
               <span>Proven Infection Control</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-foreground leading-tight flex flex-col gap-4">
-              <img src="/logo.webp" alt="Endurocide® NZ Logo" className="h-12 md:h-16 w-auto self-start" />
+              <img src="/logo.webp" alt="endurocide® NZ Logo" className="h-12 md:h-16 w-auto self-start" />
               <span>The Future of <span className="text-primary">Hospital Hygiene</span></span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-[90%] md:max-w-none">
-              Endurocide® disposable curtains are impregnated with a patented liquid formulation that traps and kills bacteria on contact.
+              <strong>endurocide®</strong> disposable curtains are impregnated with a patented liquid formulation that traps and kills bacteria on contact.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Link href="/products" className="w-full sm:w-auto">
@@ -72,7 +72,7 @@ export default function Home() {
       <section className="py-24 bg-background">
         <div className="container max-w-[1000px] mx-auto px-4 md:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl font-bold mb-4">Why Choose Endurocide®?</h2>
+            <h2 className="text-3xl font-bold mb-4">Why Choose endurocide®?</h2>
             <p className="text-muted-foreground text-lg">
               Our patented technology offers continuous protection against pathogens, reducing the risk of Hospital Acquired Infections (HAIs).
             </p>
@@ -135,7 +135,7 @@ export default function Home() {
                 Scientifically Proven Efficacy
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Endurocide® curtains have been independently tested against international standards. Our unique formulation creates a "trap and kill" mechanism that works instantly.
+                <strong>endurocide®</strong> curtains have been independently tested against international standards. Our unique formulation creates a "trap and kill" mechanism that works instantly.
               </p>
               
               <ul className="space-y-4">
@@ -165,7 +165,7 @@ export default function Home() {
         <div className="container max-w-[1000px] mx-auto px-4 md:px-8 text-center space-y-8">
           <h2 className="text-3xl md:text-4xl font-bold text-white">Ready to Upgrade Your Infection Control?</h2>
           <p className="text-xl text-blue-100 leading-relaxed">
-            Contact us today to request a sample or discuss how Endurocide® can improve safety in your facility.
+            Contact us today to request a sample or discuss how <strong>endurocide®</strong> can improve safety in your facility.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
             <Link href="/contact">

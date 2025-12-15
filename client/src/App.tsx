@@ -13,6 +13,7 @@ import ProductGuides from "./pages/ProductGuides";
 import ClinicalStudies from "./pages/ClinicalStudies";
 import News from "@/pages/News";
 import Article from "@/pages/Article";
+
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import ThankYou from "./pages/ThankYou";

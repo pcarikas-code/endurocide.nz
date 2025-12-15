@@ -92,13 +92,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="container max-w-[1000px] mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <img src="/logo.webp" alt="Endurocide® NZ Logo" className="h-12 w-auto" />
+              <img src="/logo.webp" alt="endurocide® NZ Logo" className="h-12 w-auto" />
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Advanced antimicrobial disposable curtains for superior infection control in healthcare environments.
             </p>
             <p className="text-sm text-muted-foreground leading-relaxed font-medium">
-              Kenco Limited are the official distributors of Endurocide® for New Zealand.
+              Kenco Limited are the official distributors of <strong>endurocide®</strong> for New Zealand.
             </p>
           </div>
           
@@ -127,7 +127,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </div>
         </div>
         <div className="container max-w-[1000px] mx-auto px-4 md:px-8 mt-12 pt-8 border-t text-center text-xs text-muted-foreground">
-          © {new Date().getFullYear()} Endurocide® NZ. All rights reserved.
+          © {new Date().getFullYear()} endurocide® NZ. All rights reserved.
         </div>
       </footer>
     </div>

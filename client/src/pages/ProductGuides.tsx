@@ -11,7 +11,7 @@ export default function ProductGuides() {
     { 
       category: "Technical Specifications",
       items: [
-        { title: "Endurocide® Curtain Brochure", type: "PDF", size: "2.4 MB", description: "Complete overview of features, benefits, and technical data." },
+        { title: "endurocide® Curtain Brochure", type: "PDF", size: "2.4 MB", description: "Complete overview of features, benefits, and technical data." },
         { title: "Technical Data Sheet", type: "PDF", size: "1.2 MB", description: "Detailed material specifications and antimicrobial performance data." },
         { title: "Fire Safety Certification", type: "PDF", size: "0.8 MB", description: "NFPA 701 and BS 5867 compliance documentation." },
       ]
@@ -29,15 +29,15 @@ export default function ProductGuides() {
   const faqs = [
     {
       question: "How often should curtains be changed?",
-      answer: "Endurocide® curtains are designed to remain effective for up to 24 months. However, they should be replaced immediately if visibly soiled, damaged, or in accordance with your facility's specific infection control protocols."
+      answer: <span><strong>endurocide®</strong> curtains are designed to remain effective for up to 24 months. However, they should be replaced immediately if visibly soiled, damaged, or in accordance with your facility's specific infection control protocols.</span>
     },
     {
       question: "Are the curtains fire retardant?",
-      answer: "Yes, all Endurocide® curtains are treated with flame retardant and meet international fire safety standards including NFPA 701 and BS 5867 Part 2 Type C."
+      answer: <span>Yes, all <strong>endurocide®</strong> curtains are treated with flame retardant and meet international fire safety standards including NFPA 701 and BS 5867 Part 2 Type C.</span>
     },
     {
       question: "How do I dispose of the curtains?",
-      answer: "Endurocide® curtains are 100% recyclable polypropylene. However, if contaminated with infectious material, they should be disposed of as clinical waste according to local regulations."
+      answer: <span><strong>endurocide®</strong> curtains are 100% recyclable polypropylene. However, if contaminated with infectious material, they should be disposed of as clinical waste according to local regulations.</span>
     }
   ];
 
@@ -45,8 +45,8 @@ export default function ProductGuides() {
     <div className="min-h-screen bg-background py-12">
       <SEO 
         title="Product Guides & Installation Instructions"
-        description="Download technical brochures, installation guides, and safety data sheets for Endurocide® antimicrobial curtains."
-        keywords="product guides, installation instructions, safety data sheet, technical brochure, Endurocide manual"
+        description="Download technical brochures, installation guides, and safety data sheets for endurocide® antimicrobial curtains."
+        keywords="product guides, installation instructions, safety data sheet, technical brochure, endurocide manual"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "FAQPage",
@@ -64,7 +64,7 @@ export default function ProductGuides() {
         <div className="max-w-[1000px] mx-auto text-center mb-16 space-y-4">
           <h1 className="text-4xl font-bold tracking-tight text-foreground">Product Guides & Resources</h1>
           <p className="text-lg text-muted-foreground">
-            Access technical documentation, installation manuals, and care instructions to ensure optimal performance of your Endurocide® products.
+            Access technical documentation, installation manuals, and care instructions to ensure optimal performance of your <strong>endurocide®</strong> products.
           </p>
         </div>
 
@@ -152,7 +152,7 @@ export default function ProductGuides() {
                   </div>
                   <div className="bg-muted/30 rounded-lg p-4 text-sm text-muted-foreground">
                     <p className="mb-2 font-medium text-foreground">Why this matters:</p>
-                    Endurocide® curtains are manufactured from 100% polypropylene which is inherently flame retardant. Unlike treated fabrics that can lose their fire resistance over time or after washing, our curtains maintain their safety profile throughout their lifespan.
+                    <strong>endurocide®</strong> curtains are manufactured from 100% polypropylene which is inherently flame retardant. Unlike treated fabrics that can lose their fire resistance over time or after washing, our curtains maintain their safety profile throughout their lifespan.
                   </div>
                 </div>
               </div>
@@ -187,7 +187,7 @@ export default function ProductGuides() {
                   </div>
                   <div className="bg-muted/30 rounded-lg p-4 text-sm text-muted-foreground">
                     <p className="mb-2 font-medium text-foreground">Sporicidal & Virucidal:</p>
-                    In addition to antibacterial testing, Endurocide® curtains have been independently tested against spores (C. diff) and viruses (H1N1, Coronavirus) to ensure broad-spectrum protection in clinical settings.
+                    In addition to antibacterial testing, <strong>endurocide®</strong> curtains have been independently tested against spores (C. diff) and viruses (H1N1, Coronavirus) to ensure broad-spectrum protection in clinical settings.
                   </div>
                 </div>
               </div>
@@ -218,7 +218,7 @@ export default function ProductGuides() {
                   </div>
                   <div className="bg-muted/30 rounded-lg p-4 text-sm text-muted-foreground">
                     <p className="mb-2 font-medium text-foreground">Commitment to Excellence:</p>
-                    Endurocide® is manufactured by Bio Technics Ltd, a UK-based company committed to the highest standards of quality and environmental responsibility. Our ISO accreditations demonstrate our dedication to consistent product quality and sustainable manufacturing practices.
+                    <strong>endurocide®</strong> is manufactured by Bio Technics Ltd, a UK-based company committed to the highest standards of quality and environmental responsibility. Our ISO accreditations demonstrate our dedication to consistent product quality and sustainable manufacturing practices.
                   </div>
                 </div>
               </div>

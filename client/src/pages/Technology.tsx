@@ -10,7 +10,7 @@ export default function Technology() {
     <div className="min-h-screen bg-background">
       <SEO 
         title="Patented Antimicrobial Technology | How It Works"
-        description="Learn about Endurocide's patented liquid formulation that traps and kills bacteria on contact. Independently tested and proven effective for up to 2 years."
+        description="Learn about endurocide's patented liquid formulation that traps and kills bacteria on contact. Independently tested and proven effective for up to 2 years."
         keywords="antimicrobial technology, sporicidal curtains, infection control science, hospital hygiene technology"
       />
       {/* Header */}
@@ -18,7 +18,7 @@ export default function Technology() {
         <div className="container max-w-[1000px] mx-auto px-4 md:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Patented Protection</h1>
           <p className="text-xl text-blue-100 leading-relaxed">
-            Endurocide® isn't just a curtain—it's a sophisticated medical device designed to break the chain of infection. With a patented water-based formula, it remains effective for up to two years.
+            <strong>endurocide®</strong> isn't just a curtain—it's a sophisticated medical device designed to break the chain of infection. With a patented water-based formula, it remains effective for up to two years.
           </p>
         </div>
       </div>
@@ -88,7 +88,7 @@ export default function Technology() {
                 <div className="prose max-w-none text-muted-foreground">
                   <h2 className="text-2xl font-bold text-foreground mb-4">How It Works</h2>
                   <p className="mb-6">
-                    Unlike standard antimicrobial treatments that only work when bacteria are wet, Endurocide® uses a patented "Trap & Kill" technology that remains active even on dry surfaces. Our water-based formula creates a durable defense layer that lasts for up to two years.
+                    Unlike standard antimicrobial treatments that only work when bacteria are wet, <strong>endurocide®</strong> uses a patented "Trap & Kill" technology that remains active even on dry surfaces. Our water-based formula creates a durable defense layer that lasts for up to two years.
                   </p>
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
@@ -124,7 +124,7 @@ export default function Technology() {
                 <div className="space-y-6">
                   <h2 className="text-2xl font-bold text-foreground">Tested Pathogens</h2>
                   <p className="text-muted-foreground">
-                    Endurocide® has been tested against a wide range of hospital-acquired pathogens.
+                    <strong>endurocide®</strong> has been tested against a wide range of hospital-acquired pathogens.
                   </p>
 
                   <div className="overflow-hidden rounded-xl border overflow-x-auto">

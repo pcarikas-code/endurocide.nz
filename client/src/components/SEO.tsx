@@ -13,7 +13,7 @@ interface SEOProps {
 export default function SEO({
   title,
   description,
-  keywords = "Endurocide, antimicrobial curtains, hospital curtains, infection control, healthcare curtains, disposable curtains",
+  keywords = "endurocide, antimicrobial curtains, hospital curtains, infection control, healthcare curtains, disposable curtains",
   image = "/og-image.jpg",
   url = window.location.href,
   type = "website",
@@ -21,7 +21,7 @@ export default function SEO({
 }: SEOProps) {
   useEffect(() => {
     // Update title
-    document.title = `${title} | Endurocide® New Zealand`;
+    document.title = `${title} | endurocide® New Zealand`;
 
     // Update meta tags
     const metaTags = {

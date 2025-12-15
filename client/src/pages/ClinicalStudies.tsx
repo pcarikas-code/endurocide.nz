@@ -9,14 +9,14 @@ export default function ClinicalStudies() {
     <div className="min-h-screen bg-background py-12">
       <SEO 
         title="Clinical Studies & Independent Testing Reports"
-        description="Review independent laboratory reports and clinical studies validating Endurocide's efficacy against MRSA, C.difficile, E.coli, and other pathogens."
+        description="Review independent laboratory reports and clinical studies validating endurocide's efficacy against MRSA, C.difficile, E.coli, and other pathogens."
         keywords="clinical studies, antimicrobial testing, hospital curtain efficacy, independent lab reports, infection control data"
       />
       <div className="container max-w-[1000px] mx-auto px-4 md:px-8">
         <div className="max-w-[1000px] mx-auto text-center mb-16 space-y-4">
           <h1 className="text-4xl font-bold tracking-tight text-foreground">Clinical Validation</h1>
           <p className="text-lg text-muted-foreground">
-            Endurocide® curtains are backed by independent laboratory testing and peer-reviewed clinical studies demonstrating proven efficacy against hospital-acquired infections.
+            <strong>endurocide®</strong> curtains are backed by independent laboratory testing and peer-reviewed clinical studies demonstrating proven efficacy against hospital-acquired infections.
           </p>
         </div>
 
@@ -141,7 +141,7 @@ export default function ClinicalStudies() {
                 </div>
                 <h3 className="text-xl font-bold mb-3">Long-term Sporicidal Activity Assessment</h3>
                 <p className="text-muted-foreground mb-6">
-                  Independent laboratory testing confirming that Endurocide® curtains maintain their sporicidal efficacy against C. difficile spores for up to 24 months of use.
+                  Independent laboratory testing confirming that <strong>endurocide®</strong> curtains maintain their sporicidal efficacy against C. difficile spores for up to 24 months of use.
                 </p>
                 <div className="flex gap-4">
                   <Button variant="outline" size="sm" className="gap-2" asChild>

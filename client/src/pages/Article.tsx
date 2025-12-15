@@ -51,9 +51,9 @@ export default function Article() {
   return (
     <div className="min-h-screen bg-background py-12">
       <SEO 
-        title={`${post.title} - Endurocide® NZ News`}
+        title={`${post.title} - endurocide® NZ News`}
         description={post.excerpt}
-        keywords={`Endurocide, ${post.category}, infection control, hospital curtains`}
+        keywords={`endurocide, ${post.category}, infection control, hospital curtains`}
       />
 
       <div className="container max-w-[1000px] mx-auto px-4">

@@ -60,8 +60,8 @@ export default function Products() {
     <div className="py-12 bg-muted/30 min-h-screen">
       <SEO 
         title="Antimicrobial Hospital Curtains | Product Range"
-        description="Browse our range of Endurocide® antimicrobial curtains. Available in standard, special, and printed designs. Effective against bacteria, fungi, and spores."
-        keywords="hospital curtains, antimicrobial curtains, medical curtains, disposable curtains, Endurocide products"
+        description="Browse our range of endurocide® antimicrobial curtains. Available in standard, special, and printed designs. Effective against bacteria, fungi, and spores."
+        keywords="hospital curtains, antimicrobial curtains, medical curtains, disposable curtains, endurocide products"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "ItemList",
@@ -73,7 +73,7 @@ export default function Products() {
             "image": `https://endurocide.nz${product.image}`,
             "brand": {
               "@type": "Brand",
-              "name": "Endurocide"
+              "name": "endurocide"
             },
             "offers": {
               "@type": "Offer",
@@ -259,7 +259,7 @@ export default function Products() {
         <div className="bg-card rounded-xl border shadow-sm overflow-hidden mb-20">
           <div className="p-6 border-b bg-muted/30">
             <h3 className="text-2xl font-bold text-primary">Available Color Options</h3>
-            <p className="text-muted-foreground mt-2">All Endurocide® curtains are available in these color options.</p>
+            <p className="text-muted-foreground mt-2">All <strong>endurocide®</strong> curtains are available in these color options.</p>
           </div>
           <div className="p-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

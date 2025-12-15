@@ -7,14 +7,14 @@ export default function About() {
   return (
     <div className="min-h-screen bg-background">
       <SEO 
-        title="About Endurocide® New Zealand | Kenco Ltd"
-        description="Endurocide® curtains are distributed in New Zealand by Kenco Ltd, a trusted provider of medical supplies and infection control solutions."
-        keywords="about Endurocide, Kenco Ltd, medical supplies NZ, infection control distributor, healthcare partners"
+        title="About endurocide® New Zealand | Kenco Ltd"
+        description="endurocide® curtains are distributed in New Zealand by Kenco Ltd, a trusted provider of medical supplies and infection control solutions."
+        keywords="about endurocide, Kenco Ltd, medical supplies NZ, infection control distributor, healthcare partners"
       />
       {/* Hero */}
       <div className="bg-muted py-20">
         <div className="container max-w-[1000px] mx-auto px-4 md:px-8 text-center">
-          <h1 className="text-4xl font-bold text-foreground mb-6">About Endurocide® New Zealand</h1>
+          <h1 className="text-4xl font-bold text-foreground mb-6">About endurocide® New Zealand</h1>
           <p className="text-xl text-muted-foreground leading-relaxed">
             Dedicated to breaking the chain of infection in healthcare settings.
           </p>
@@ -27,25 +27,25 @@ export default function About() {
           <div className="space-y-6">
             <h2 className="text-3xl font-bold text-primary">Our Commitment</h2>
             <p className="text-muted-foreground leading-relaxed">
-              At Endurocide® New Zealand, we are dedicated to breaking the chain of infection in healthcare settings. With over 30 years of research and development, our revolutionary infection control products are trusted by healthcare professionals, architects, and specifiers throughout the world, to protect patients and staff from harmful pathogens.
+              At <strong>endurocide®</strong> New Zealand, we are dedicated to breaking the chain of infection in healthcare settings. With over 30 years of research and development, our revolutionary infection control products are trusted by healthcare professionals, architects, and specifiers throughout the world, to protect patients and staff from harmful pathogens.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Our flagship product, the Endurocide® Antimicrobial & Sporicidal Disposable Curtain, is a testament to our commitment to innovation and medical efficacy. These disposable hospital curtains are not just a barrier; they are an active defence against infection. Featuring a patented formula, our curtains trap and kill a broad spectrum of pathogens directly on the fabric surface —including spores, bacteria, mycobacteria, and fungi. This significantly reduces the risk of Healthcare-Associated Infections (HAIs) being transmitted via one of the most frequently touched surfaces in a patient's environment.
+              Our flagship product, the <strong>endurocide®</strong> Antimicrobial & Sporicidal Disposable Curtain, is a testament to our commitment to innovation and medical efficacy. These disposable hospital curtains are not just a barrier; they are an active defence against infection. Featuring a patented formula, our curtains trap and kill a broad spectrum of pathogens directly on the fabric surface —including spores, bacteria, mycobacteria, and fungi. This significantly reduces the risk of Healthcare-Associated Infections (HAIs) being transmitted via one of the most frequently touched surfaces in a patient's environment.
             </p>
           </div>
           <div className="bg-white p-8 rounded-2xl flex items-center justify-center shadow-sm border">
             <img 
               src="/logo.webp" 
-              alt="Endurocide Logo" 
+              alt="endurocide Logo" 
               className="max-w-full h-auto object-contain"
             />
           </div>
         </div>
 
-        {/* Why Choose Endurocide */}
+        {/* Why Choose endurocide */}
         <div className="space-y-10">
           <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold text-foreground">Why Choose Endurocide®?</h2>
+            <h2 className="text-3xl font-bold text-foreground">Why Choose endurocide®?</h2>
             <p className="text-muted-foreground mt-4">
               Trusted by healthcare professionals worldwide for superior infection control.
             </p>
@@ -102,7 +102,7 @@ export default function About() {
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Economical and Efficient</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    By reducing the frequency of curtain change-outs and lowering the risk of costly HAIs, Endurocide® disposable curtains deliver a significant return on investment. Published studies have shown that our curtains can cut overall costs by up to 50% compared to traditional curtain management.
+                    By reducing the frequency of curtain change-outs and lowering the risk of costly HAIs, <strong>endurocide®</strong> disposable curtains deliver a significant return on investment. Published studies have shown that our curtains can cut overall costs by up to 50% compared to traditional curtain management.
                   </p>
                 </div>
               </div>
@@ -115,7 +115,7 @@ export default function About() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-foreground mb-4">For Architects & Specifiers</h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Designing the future of healthcare requires specifying products that meet the highest standards of safety and compliance. Endurocide® curtains are available in various sizes and configurations, including options that are compliant with NFPA 13 standards for ceiling-fixed tracks. Partner with us to incorporate a proven, passive infection control product into your next healthcare project.
+              Designing the future of healthcare requires specifying products that meet the highest standards of safety and compliance. <strong>endurocide®</strong> curtains are available in various sizes and configurations, including options that are compliant with NFPA 13 standards for ceiling-fixed tracks. Partner with us to incorporate a proven, passive infection control product into your next healthcare project.
             </p>
           </div>
         </div>

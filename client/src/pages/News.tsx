@@ -43,8 +43,8 @@ export default function News() {
     <div className="min-h-screen bg-background py-12">
       <SEO 
         title="Latest News & Infection Control Updates"
-        description="Stay updated with the latest news, research findings, and product announcements from Endurocide® New Zealand."
-        keywords="infection control news, healthcare updates, hospital hygiene blog, Endurocide news"
+        description="Stay updated with the latest news, research findings, and product announcements from endurocide® New Zealand."
+        keywords="infection control news, healthcare updates, hospital hygiene blog, endurocide news"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "Blog",
@@ -56,7 +56,7 @@ export default function News() {
             "description": post.excerpt,
             "author": {
               "@type": "Organization",
-              "name": "Endurocide New Zealand"
+              "name": "endurocide New Zealand"
             }
           }))
         }}

@@ -33,15 +33,15 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-muted/30 py-12">
       <SEO 
-        title="Contact Endurocide® New Zealand | Request a Quote"
-        description="Get in touch with Endurocide® New Zealand for quotes, samples, or technical inquiries. Call us at +64 21 029 66718 or email info@endurocide.nz."
-        keywords="contact Endurocide, request quote, hospital curtain suppliers, infection control contact"
+        title="Contact endurocide® New Zealand | Request a Quote"
+        description="Get in touch with endurocide® New Zealand for quotes, samples, or technical inquiries. Call us at +64 21 029 66718 or email info@endurocide.nz."
+        keywords="contact endurocide, request quote, hospital curtain suppliers, infection control contact"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "ContactPage",
           "mainEntity": {
             "@type": "Organization",
-            "name": "Endurocide New Zealand",
+            "name": "endurocide New Zealand",
             "telephone": "+64-21-029-66718",
             "email": "info@endurocide.nz",
             "url": "https://endurocide.nz"
@@ -52,7 +52,7 @@ export default function Contact() {
         <div className="max-w-[1000px] mx-auto text-center mb-16">
           <h1 className="text-4xl font-bold tracking-tight text-foreground mb-4">Get in Touch</h1>
           <p className="text-lg text-muted-foreground">
-            Have questions about Endurocide®? Our team is here to help you find the right infection control solution.
+            Have questions about <strong>endurocide®</strong>? Our team is here to help you find the right infection control solution.
           </p>
         </div>
 
