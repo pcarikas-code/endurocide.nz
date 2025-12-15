@@ -16,25 +16,25 @@ export default function Products() {
   const products = [
     {
       id: "standard-curtain",
-      title: "Standard Antimicrobial Curtain",
-      description: "Our flagship disposable curtain with patented sporicidal technology. Fits most standard track systems.",
-      features: ["Universal eyelets", "Date labeling system", "Flame retardant", "100% Recyclable"],
-      image: "/images/hero-curtain.jpg", // Reusing hero for now, would ideally be product shot
+      title: "Standard Curtain",
+      description: "Designed for suspended ceiling tracks. 100% polypropylene with patented antimicrobial technology.",
+      features: ["Height: 2.0m", "Widths: 3.75m, 5.5m, 7.5m", "Colors: Medical Blue, Teal, Grey", "Patented 'Trap & Kill' technology"],
+      image: "/images/hero-curtain.jpg",
       tag: "Best Seller"
     },
     {
       id: "mesh-curtain",
       title: "Mesh Top Curtain",
-      description: "Designed for areas requiring sprinkler systems compliance. Features a permeable mesh top section.",
-      features: ["Sprinkler compliant", "Enhanced airflow", "Antimicrobial fabric", "Various drop lengths"],
+      description: "Designed for ceiling-fixed tracks. Features a 0.55m mesh top compliant with NFPA 13 for sprinkler systems.",
+      features: ["Height: 2.55m (incl. mesh)", "Widths: 3.75m, 5.5m, 7.5m", "Colors: Medical Blue, Teal, Grey", "Enhanced airflow & safety"],
       image: "/images/hospital-corridor.jpg",
       tag: "Safety Compliant"
     },
     {
       id: "long-drop-curtain",
       title: "Long Drop Curtain",
-      description: "Extra length curtains designed for high ceilings or specific ward requirements. Maintains full antimicrobial protection.",
-      features: ["Extended length options", "Customizable drop", "Same patented formula", "Ideal for high ceilings"],
+      description: "Extra length curtains designed for high ceilings and ceiling-fixed tracks. Maintains full antimicrobial protection.",
+      features: ["Height: 2.6m", "Widths: 3.75m, 5.5m, 7.5m", "Colors: Medical Blue, Teal, Grey", "Ideal for high ceilings"],
       image: "/images/hero-curtain.jpg", // Reusing hero image
       tag: "Specialist"
     }

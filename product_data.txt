@@ -1,0 +1,30 @@
+Curtain Types:
+1. Standard: 
+   - Use: Suspended ceiling curtain track
+   - Material: 100% polypropylene
+   - Height: 2.0m
+   - Widths: Full (7.5m), Medium (5.5m), Half (3.75m)
+
+2. Mesh Top:
+   - Use: Ceiling-fixed curtain track
+   - Compliance: Mesh compliant with NFPA 13
+   - Height: 2.55m (includes 0.55m mesh)
+   - Widths: Full (7.5m), Medium (5.5m), Half (3.75m)
+
+3. Long Drop:
+   - Use: Ceiling-fixed curtain track
+   - Material: 100% polypropylene
+   - Height: 2.6m
+   - Widths: Full (7.5m), Medium (5.5m), Half (3.75m)
+
+Track Coverage:
+- Full width (7.5m) covers 6.3m track
+- Medium width (5.5m) covers 4.3m track
+- Half width (3.75m) covers 2.3m track
+
+Pleat Width: 15cm for all types
+
+Colors:
+- Standard: Medical Blue, Teal, Grey
+- Special Order: Pastel Blue, Pastel Yellow, Latte
+- Special Order Printed: Dotty on white
