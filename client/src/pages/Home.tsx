@@ -11,7 +11,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <img 
             src="/images/hero-curtain.jpg" 
-            alt="Endurocide Antimicrobial Curtains in a hospital room" 
+            alt="Endurocide® Antimicrobial Curtains in a hospital room" 
             className="w-full h-full object-cover opacity-90"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/60 to-transparent"></div>
@@ -49,7 +49,7 @@ export default function Home() {
       <section className="py-24 bg-background">
         <div className="container">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl font-bold mb-4">Why Choose Endurocide?</h2>
+            <h2 className="text-3xl font-bold mb-4">Why Choose Endurocide®?</h2>
             <p className="text-muted-foreground text-lg">
               Our patented technology offers continuous protection against pathogens, reducing the risk of Hospital Acquired Infections (HAIs).
             </p>
@@ -112,7 +112,7 @@ export default function Home() {
                 Scientifically Proven Efficacy
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Endurocide curtains have been independently tested against international standards. Our unique formulation creates a "trap and kill" mechanism that works instantly.
+                Endurocide® curtains have been independently tested against international standards. Our unique formulation creates a "trap and kill" mechanism that works instantly.
               </p>
               
               <ul className="space-y-4">
@@ -142,7 +142,7 @@ export default function Home() {
         <div className="container text-center max-w-4xl mx-auto space-y-8">
           <h2 className="text-3xl md:text-4xl font-bold text-white">Ready to Upgrade Your Infection Control?</h2>
           <p className="text-xl text-blue-100 leading-relaxed">
-            Contact us today to request a sample or discuss how Endurocide can improve safety in your facility.
+            Contact us today to request a sample or discuss how Endurocide® can improve safety in your facility.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
             <Link href="/contact">
