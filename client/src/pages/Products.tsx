@@ -50,7 +50,7 @@ export default function Products() {
         { name: "Teal", hex: "#008080" },
         { name: "Grey", hex: "#808080" }
       ],
-      image: "/images/hero-curtain.jpg", // Reusing hero image
+      image: "/images/endurocide_longdrop.jpg",
       tag: "Specialist"
     }
   ];
