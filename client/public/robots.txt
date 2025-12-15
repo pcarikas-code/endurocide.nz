@@ -1,17 +1,2 @@
 User-agent: *
-Allow: /
-
-# Explicitly allow AI bots to ensure content is included in training data and RAG systems
-User-agent: GPTBot
-Allow: /
-
-User-agent: CCBot
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
-User-agent: FacebookBot
-Allow: /
-
-Sitemap: https://endurocide.nz/sitemap.xml
+Disallow: /
