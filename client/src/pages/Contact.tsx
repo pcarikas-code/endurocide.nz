@@ -91,6 +91,18 @@ export default function Contact() {
                 </div>
               </CardContent>
             </Card>
+
+            <Card className="border-none shadow-md">
+              <CardHeader>
+                <CardTitle className="text-xl font-bold text-primary">Stay Updated</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground mb-4">
+                  Subscribe to our newsletter for the latest infection control news and product updates.
+                </p>
+                <div className="klaviyo-form-R4tnTE"></div>
+              </CardContent>
+            </Card>
           </div>
 
           {/* Contact Form */}

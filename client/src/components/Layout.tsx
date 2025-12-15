@@ -120,10 +120,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
           <div>
             <h4 className="font-semibold mb-4 text-foreground">Contact</h4>
-            <ul className="space-y-2 text-sm text-muted-foreground">
+            <ul className="space-y-2 text-sm text-muted-foreground mb-6">
               <li>info@endurocide.nz</li>
               <li>+64 (0)21 029 66718</li>
             </ul>
+            
+            <h4 className="font-semibold mb-4 text-foreground">Newsletter</h4>
+            <div className="klaviyo-form-R4tnTE"></div>
           </div>
         </div>
         <div className="container max-w-[1000px] mx-auto px-4 md:px-8 mt-12 pt-8 border-t text-center text-xs text-muted-foreground">
