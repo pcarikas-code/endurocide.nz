@@ -114,9 +114,11 @@ export default function ClinicalStudies() {
                   A multi-center study published in the American Journal of Infection Control demonstrating significant reduction in bacterial load on privacy curtains in high-acuity settings.
                 </p>
                 <div className="flex gap-4">
-                  <Button variant="outline" size="sm" className="gap-2">
-                    <FileText className="h-4 w-4" />
-                    Read Abstract
+                  <Button variant="outline" size="sm" className="gap-2" asChild>
+                    <a href="https://www.sciencedirect.com/science/article/pii/S2590088923000240" target="_blank" rel="noopener noreferrer">
+                      <FileText className="h-4 w-4" />
+                      Read Abstract
+                    </a>
                   </Button>
                 </div>
               </div>
@@ -142,9 +144,11 @@ export default function ClinicalStudies() {
                   Independent laboratory testing confirming that Endurocide® curtains maintain their sporicidal efficacy against C. difficile spores for up to 24 months of use.
                 </p>
                 <div className="flex gap-4">
-                  <Button variant="outline" size="sm" className="gap-2">
-                    <FileText className="h-4 w-4" />
-                    View Data
+                  <Button variant="outline" size="sm" className="gap-2" asChild>
+                    <a href="https://lateralmedical.com/wp-content/uploads/2020/07/2-year-Testing-of-Endurocide-Curtain-.pdf" target="_blank" rel="noopener noreferrer">
+                      <FileText className="h-4 w-4" />
+                      View Data
+                    </a>
                   </Button>
                 </div>
               </div>
@@ -170,9 +174,11 @@ export default function ClinicalStudies() {
                   Comparative analysis in a UK NHS Trust revealing a 40% reduction in curtain changeover frequency and significant savings on laundry logistics and replacement costs.
                 </p>
                 <div className="flex gap-4">
-                  <Button variant="outline" size="sm" className="gap-2">
-                    <FileText className="h-4 w-4" />
-                    Download Report
+                  <Button variant="outline" size="sm" className="gap-2" asChild>
+                    <a href="https://endurocide.com/wp-content/uploads/2023/10/NHS-Curtain-Evaluation-2013.pdf" target="_blank" rel="noopener noreferrer">
+                      <FileText className="h-4 w-4" />
+                      Download Report
+                    </a>
                   </Button>
                 </div>
               </div>
