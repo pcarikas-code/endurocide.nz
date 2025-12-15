@@ -35,6 +35,17 @@ export default function Contact() {
         title="Contact Endurocide® New Zealand | Request a Quote"
         description="Get in touch with Endurocide® New Zealand for quotes, samples, or technical inquiries. Call us at +64 21 029 66718 or email info@endurocide.nz."
         keywords="contact Endurocide, request quote, hospital curtain suppliers, infection control contact"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          "mainEntity": {
+            "@type": "Organization",
+            "name": "Endurocide New Zealand",
+            "telephone": "+64-21-029-66718",
+            "email": "info@endurocide.nz",
+            "url": "https://endurocide.nz"
+          }
+        }}
       />
       <div className="container">
         <div className="max-w-3xl mx-auto text-center mb-16">

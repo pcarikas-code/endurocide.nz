@@ -62,6 +62,26 @@ export default function Products() {
         title="Antimicrobial Hospital Curtains | Product Range"
         description="Browse our range of Endurocide® antimicrobial curtains. Available in standard, special, and printed designs. Effective against bacteria, fungi, and spores."
         keywords="hospital curtains, antimicrobial curtains, medical curtains, disposable curtains, Endurocide products"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          "itemListElement": products.map((product, index) => ({
+            "@type": "Product",
+            "position": index + 1,
+            "name": product.title,
+            "description": product.description,
+            "image": `https://endurocide.nz${product.image}`,
+            "brand": {
+              "@type": "Brand",
+              "name": "Endurocide"
+            },
+            "offers": {
+              "@type": "Offer",
+              "availability": "https://schema.org/InStock",
+              "priceCurrency": "NZD"
+            }
+          }))
+        }}
       />
       <div className="container">
         <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">

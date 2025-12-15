@@ -11,6 +11,22 @@ export default function Home() {
         title="Hospital Curtains & Infection Control Solutions"
         description="Endurocide® provides patented antimicrobial disposable curtains that kill bacteria on contact. Proven infection control for hospitals and healthcare facilities in New Zealand."
         keywords="antimicrobial curtains, hospital curtains, infection control, disposable curtains, Endurocide, healthcare hygiene"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Endurocide New Zealand",
+          "url": "https://endurocide.nz",
+          "logo": "https://endurocide.nz/logo.webp",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+64-21-029-66718",
+            "contactType": "customer service",
+            "areaServed": "NZ"
+          },
+          "sameAs": [
+            "https://www.linkedin.com/company/kenco-ltd"
+          ]
+        }}
       />
       {/* Hero Section */}
       <section className="relative h-[600px] flex items-center justify-center overflow-hidden bg-muted">

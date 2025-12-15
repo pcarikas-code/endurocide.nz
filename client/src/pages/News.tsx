@@ -65,6 +65,21 @@ export default function News() {
         title="Latest News & Infection Control Updates"
         description="Stay updated with the latest news, research findings, and product announcements from Endurocide® New Zealand."
         keywords="infection control news, healthcare updates, hospital hygiene blog, Endurocide news"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "Blog",
+          "blogPost": blogPosts.map(post => ({
+            "@type": "BlogPosting",
+            "headline": post.title,
+            "datePublished": new Date(post.date).toISOString(),
+            "articleSection": post.category,
+            "description": post.excerpt,
+            "author": {
+              "@type": "Organization",
+              "name": "Endurocide New Zealand"
+            }
+          }))
+        }}
       />
       <div className="container">
         <div className="max-w-3xl mx-auto text-center mb-12">

@@ -7,6 +7,7 @@ interface SEOProps {
   image?: string;
   url?: string;
   type?: string;
+  structuredData?: Record<string, any>;
 }
 
 export default function SEO({
@@ -16,6 +17,7 @@ export default function SEO({
   image = "/og-image.jpg",
   url = window.location.href,
   type = "website",
+  structuredData,
 }: SEOProps) {
   useEffect(() => {
     // Update title
@@ -57,7 +59,18 @@ export default function SEO({
     }
     canonical.setAttribute("href", url);
 
-  }, [title, description, keywords, image, url, type]);
+    // Inject Structured Data (JSON-LD)
+    if (structuredData) {
+      let script = document.querySelector('script[type="application/ld+json"]');
+      if (!script) {
+        script = document.createElement("script");
+        script.setAttribute("type", "application/ld+json");
+        document.head.appendChild(script);
+      }
+      script.textContent = JSON.stringify(structuredData);
+    }
+
+  }, [title, description, keywords, image, url, type, structuredData]);
 
   return null;
 }
