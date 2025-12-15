@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Calendar, ArrowRight, Filter } from "lucide-react";
+import { Calendar, ArrowRight, Filter, Share2, Facebook, Linkedin, Twitter } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
@@ -111,10 +111,21 @@ export default function News() {
                   {post.excerpt}
                 </p>
               </CardContent>
-              <CardFooter className="pt-0">
+              <CardFooter className="pt-0 flex justify-between items-center">
                 <Button variant="ghost" className="p-0 h-auto hover:bg-transparent hover:text-primary group flex items-center gap-2">
                   Read Article <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Button>
+                <div className="flex gap-2">
+                  <Button variant="ghost" size="icon" className="h-8 w-8 text-muted-foreground hover:text-[#1877F2]" title="Share on Facebook">
+                    <Facebook className="h-4 w-4" />
+                  </Button>
+                  <Button variant="ghost" size="icon" className="h-8 w-8 text-muted-foreground hover:text-[#1DA1F2]" title="Share on Twitter">
+                    <Twitter className="h-4 w-4" />
+                  </Button>
+                  <Button variant="ghost" size="icon" className="h-8 w-8 text-muted-foreground hover:text-[#0A66C2]" title="Share on LinkedIn">
+                    <Linkedin className="h-4 w-4" />
+                  </Button>
+                </div>
               </CardFooter>
             </Card>
           ))}
