@@ -50,7 +50,7 @@ export default function Home() {
               <span>The Future of <span className="text-primary">Hospital Hygiene</span></span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-[90%] md:max-w-none">
-              <strong>endurocide®</strong> disposable curtains are impregnated with a patented liquid formulation that traps and kills bacteria on contact.
+              <strong>endurocide®</strong> disposable antimicrobial curtains are impregnated with a patented liquid formulation that traps and kills bacteria on contact.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Link href="/products" className="w-full sm:w-auto">

@@ -102,7 +102,7 @@ export default function About() {
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Economical and Efficient</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    By reducing the frequency of curtain change-outs and lowering the risk of costly HAIs, <strong>endurocide®</strong> disposable curtains deliver a significant return on investment. Published studies have shown that our curtains can cut overall costs by up to 50% compared to traditional curtain management.
+                    By reducing the frequency of curtain change-outs and lowering the risk of costly HAIs, <strong>endurocide®</strong> disposable antimicrobial curtains deliver a significant return on investment. Published studies have shown that our curtains can cut overall costs by up to 50% compared to traditional curtain management.
                   </p>
                 </div>
               </div>
