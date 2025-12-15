@@ -92,7 +92,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="container grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <img src="/logo.webp" alt="Endurocide® NZ Logo" className="h-8 w-auto" />
+              <img src="/logo.webp" alt="Endurocide® NZ Logo" className="h-12 w-auto" />
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Advanced antimicrobial disposable curtains for superior infection control in healthcare environments.
