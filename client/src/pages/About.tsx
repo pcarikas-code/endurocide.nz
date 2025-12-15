@@ -29,7 +29,7 @@ export default function About() {
           </div>
           <div className="bg-white p-8 rounded-2xl flex items-center justify-center shadow-sm border">
             <img 
-              src="/images/endurocide-logo.png" 
+              src="/logo.webp" 
               alt="Endurocide Logo" 
               className="max-w-full h-auto object-contain"
             />
