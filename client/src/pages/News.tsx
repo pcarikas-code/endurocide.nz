@@ -108,9 +108,10 @@ export default function News() {
                 </CardTitle>
               </CardHeader>
               <CardContent className="flex-1">
-                <p className="text-muted-foreground text-sm leading-relaxed line-clamp-4">
-                  {post.excerpt}
-                </p>
+                <p 
+                  className="text-muted-foreground text-sm leading-relaxed line-clamp-4"
+                  dangerouslySetInnerHTML={{ __html: post.excerpt }}
+                />
               </CardContent>
               <CardFooter className="pt-0 flex justify-between items-center">
                 <Link href={`/news/${post.slug}`}>

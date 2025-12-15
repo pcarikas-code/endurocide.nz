@@ -80,9 +80,11 @@ export default function Article() {
 
             <div className="prose prose-lg max-w-none text-muted-foreground">
               {post.content.split('\n\n').map((paragraph, index) => (
-                <p key={index} className="mb-6 leading-relaxed">
-                  {paragraph}
-                </p>
+                <p 
+                  key={index} 
+                  className="mb-6 leading-relaxed"
+                  dangerouslySetInnerHTML={{ __html: paragraph }}
+                />
               ))}
             </div>
 
