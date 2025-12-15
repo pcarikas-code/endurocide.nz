@@ -28,45 +28,51 @@ export default function Home() {
           ]
         }}
       />
-      {/* Hero Section */}
-      <section className="relative min-h-[600px] md:h-[600px] flex items-center justify-center overflow-hidden bg-muted">
-        <div className="absolute inset-0 z-0 flex justify-center">
-          <div className="w-full max-w-[1000px] relative h-full">
+      
+      {/* Hero Section - Optimized & Simplified */}
+      <section className="w-full bg-muted flex justify-center overflow-hidden">
+        <div className="relative w-full max-w-[1000px] min-h-[600px] flex items-center">
+          
+          {/* Background Image - Strictly constrained to max-w-[1000px] */}
+          <div className="absolute inset-0 z-0">
             <img 
               src="/images/hero-curtain-flipped.webp" 
               alt="endurocide® Antimicrobial Curtains in a hospital room" 
               className="w-full h-full object-cover opacity-90 object-[75%_center] md:object-center"
             />
+            {/* Gradient Overlay for text readability */}
             <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-white/95 via-white/80 to-transparent/20 md:from-white/90 md:via-white/60 md:to-transparent"></div>
           </div>
-          {/* Extended background for wide screens to avoid white bars */}
-          <div className="absolute inset-0 -z-10 bg-muted"></div>
-        </div>
-        
-        <div className="container relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center max-w-[1000px] mx-auto px-4 md:px-8 py-12 md:py-20">
-          <div className="space-y-6 max-w-2xl pt-8 md:pt-0">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/10 text-secondary font-medium text-sm border border-secondary/20 bg-white/50 backdrop-blur-sm">
-              <Shield className="h-4 w-4" />
-              <span>Proven Infection Control</span>
-            </div>
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-foreground leading-tight flex flex-col gap-4">
-              <img src="/logo.webp" alt="endurocide® NZ Logo" className="h-12 md:h-16 w-auto self-start" />
-              <span>The Future of <span className="text-primary">Hospital Hygiene</span></span>
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-[90%] md:max-w-none">
-              <strong>endurocide®</strong> disposable antimicrobial curtains are impregnated with a patented liquid formulation that traps and kills bacteria on contact.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Link href="/products" className="w-full sm:w-auto">
-                <Button size="lg" className="text-base px-8 h-12 shadow-lg shadow-primary/20 w-full sm:w-auto">
-                  View Products
-                </Button>
-              </Link>
-              <Link href="/technology" className="w-full sm:w-auto">
-                <Button variant="outline" size="lg" className="text-base px-8 h-12 bg-white/80 backdrop-blur hover:bg-white w-full sm:w-auto">
-                  How It Works
-                </Button>
-              </Link>
+          
+          {/* Content Container - Added padding as requested */}
+          <div className="relative z-10 w-full px-8 py-20 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="space-y-8 max-w-2xl">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary/10 text-secondary font-medium text-sm border border-secondary/20 bg-white/50 backdrop-blur-sm">
+                <Shield className="h-4 w-4" />
+                <span>Proven Infection Control</span>
+              </div>
+              
+              <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-foreground leading-tight flex flex-col gap-4">
+                <img src="/logo.webp" alt="endurocide® NZ Logo" className="h-12 md:h-16 w-auto self-start" />
+                <span>The Future of <span className="text-primary">Hospital Hygiene</span></span>
+              </h1>
+              
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-[90%] md:max-w-none">
+                <strong>endurocide®</strong> disposable antimicrobial curtains are impregnated with a patented liquid formulation that traps and kills bacteria on contact.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-4 pt-2">
+                <Link href="/products" className="w-full sm:w-auto">
+                  <Button size="lg" className="text-base px-8 h-14 shadow-lg shadow-primary/20 w-full sm:w-auto">
+                    View Products
+                  </Button>
+                </Link>
+                <Link href="/technology" className="w-full sm:w-auto">
+                  <Button variant="outline" size="lg" className="text-base px-8 h-14 bg-white/80 backdrop-blur hover:bg-white w-full sm:w-auto">
+                    How It Works
+                  </Button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
