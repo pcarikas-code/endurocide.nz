@@ -24,7 +24,7 @@ export default function Products() {
         { name: "Teal", hex: "#008080" },
         { name: "Grey", hex: "#808080" }
       ],
-      image: "/images/hero-curtain.jpg",
+      image: "/images/endurocide_standard.webp",
       tag: "Best Seller"
     },
     {
