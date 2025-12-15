@@ -1,10 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { CheckCircle2 } from "lucide-react";
+import SEO from "@/components/SEO";
 
 export default function About() {
   return (
     <div className="min-h-screen bg-background">
+      <SEO 
+        title="About Endurocide® New Zealand | Kenco Ltd"
+        description="Endurocide® curtains are distributed in New Zealand by Kenco Ltd, a trusted provider of medical supplies and infection control solutions."
+        keywords="about Endurocide, Kenco Ltd, medical supplies NZ, infection control distributor, healthcare partners"
+      />
       {/* Hero */}
       <div className="bg-muted py-20">
         <div className="container text-center max-w-4xl">

@@ -3,10 +3,16 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ShieldCheck, FileText, Beaker, Award, Leaf } from "lucide-react";
 import { Link } from "wouter";
+import SEO from "@/components/SEO";
 
 export default function Technology() {
   return (
     <div className="min-h-screen bg-background">
+      <SEO 
+        title="Patented Antimicrobial Technology | How It Works"
+        description="Learn about Endurocide's patented liquid formulation that traps and kills bacteria on contact. Independently tested and proven effective for up to 2 years."
+        keywords="antimicrobial technology, sporicidal curtains, infection control science, hospital hygiene technology"
+      />
       {/* Header */}
       <div className="bg-primary py-20 text-primary-foreground">
         <div className="container text-center max-w-4xl">

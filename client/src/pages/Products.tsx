@@ -3,6 +3,7 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 import { Badge } from "@/components/ui/badge";
 import { Check, X } from "lucide-react";
 import { Link } from "wouter";
+import SEO from "@/components/SEO";
 import {
   Table,
   TableBody,
@@ -57,6 +58,11 @@ export default function Products() {
 
   return (
     <div className="py-12 bg-muted/30 min-h-screen">
+      <SEO 
+        title="Antimicrobial Hospital Curtains | Product Range"
+        description="Browse our range of Endurocide® antimicrobial curtains. Available in standard, special, and printed designs. Effective against bacteria, fungi, and spores."
+        keywords="hospital curtains, antimicrobial curtains, medical curtains, disposable curtains, Endurocide products"
+      />
       <div className="container">
         <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
           <h1 className="text-4xl font-bold tracking-tight text-foreground">Product Range</h1>

@@ -2,10 +2,16 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { FlaskConical, CheckCircle2, FileText, TrendingDown, ShieldCheck, Microscope } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import SEO from "@/components/SEO";
 
 export default function ClinicalStudies() {
   return (
     <div className="min-h-screen bg-background py-12">
+      <SEO 
+        title="Clinical Studies & Independent Testing Reports"
+        description="Review independent laboratory reports and clinical studies validating Endurocide's efficacy against MRSA, C.difficile, E.coli, and other pathogens."
+        keywords="clinical studies, antimicrobial testing, hospital curtain efficacy, independent lab reports, infection control data"
+      />
       <div className="container">
         <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
           <h1 className="text-4xl font-bold tracking-tight text-foreground">Clinical Validation</h1>

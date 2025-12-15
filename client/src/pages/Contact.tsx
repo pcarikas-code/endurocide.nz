@@ -3,6 +3,7 @@ import { Phone, Mail, Clock, AlertCircle } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
+import SEO from "@/components/SEO";
 
 export default function Contact() {
   const [hasError, setHasError] = useState(false);
@@ -30,6 +31,11 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen bg-muted/30 py-12">
+      <SEO 
+        title="Contact Endurocide® New Zealand | Request a Quote"
+        description="Get in touch with Endurocide® New Zealand for quotes, samples, or technical inquiries. Call us at +64 21 029 66718 or email info@endurocide.nz."
+        keywords="contact Endurocide, request quote, hospital curtain suppliers, infection control contact"
+      />
       <div className="container">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h1 className="text-4xl font-bold tracking-tight text-foreground mb-4">Get in Touch</h1>

@@ -1,11 +1,17 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { CheckCircle2, Leaf, Shield, Clock, Microscope } from "lucide-react";
+import { CheckCircle2, ArrowRight, ShieldCheck, Clock, Droplets, Leaf, Shield, Microscope } from "lucide-react";
 import { Link } from "wouter";
+import SEO from "@/components/SEO";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-0">
+    <div className="flex flex-col min-h-screen">
+      <SEO 
+        title="Hospital Curtains & Infection Control Solutions"
+        description="Endurocide® provides patented antimicrobial disposable curtains that kill bacteria on contact. Proven infection control for hospitals and healthcare facilities in New Zealand."
+        keywords="antimicrobial curtains, hospital curtains, infection control, disposable curtains, Endurocide, healthcare hygiene"
+      />
       {/* Hero Section */}
       <section className="relative h-[600px] flex items-center justify-center overflow-hidden bg-muted">
         <div className="absolute inset-0 z-0">

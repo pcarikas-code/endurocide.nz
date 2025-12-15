@@ -3,6 +3,7 @@ import { FileText, Download, PlayCircle, Info, AlertTriangle, CheckCircle2 } fro
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import SEO from "@/components/SEO";
 
 export default function ProductGuides() {
   const documents = [
@@ -41,6 +42,11 @@ export default function ProductGuides() {
 
   return (
     <div className="min-h-screen bg-background py-12">
+      <SEO 
+        title="Product Guides & Installation Instructions"
+        description="Download technical brochures, installation guides, and safety data sheets for Endurocide® antimicrobial curtains."
+        keywords="product guides, installation instructions, safety data sheet, technical brochure, Endurocide manual"
+      />
       <div className="container">
         <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
           <h1 className="text-4xl font-bold tracking-tight text-foreground">Product Guides & Resources</h1>

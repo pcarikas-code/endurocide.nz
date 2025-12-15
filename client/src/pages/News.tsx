@@ -4,6 +4,7 @@ import { Calendar, ArrowRight, Filter, Share2, Facebook, Linkedin, Twitter } fro
 import { Badge } from "@/components/ui/badge";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import SEO from "@/components/SEO";
 
 export default function News() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
@@ -60,6 +61,11 @@ export default function News() {
 
   return (
     <div className="min-h-screen bg-background py-12">
+      <SEO 
+        title="Latest News & Infection Control Updates"
+        description="Stay updated with the latest news, research findings, and product announcements from Endurocide® New Zealand."
+        keywords="infection control news, healthcare updates, hospital hygiene blog, Endurocide news"
+      />
       <div className="container">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h1 className="text-4xl font-bold tracking-tight text-foreground mb-4">Insights & Updates</h1>
