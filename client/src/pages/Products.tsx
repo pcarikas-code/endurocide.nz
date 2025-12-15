@@ -131,8 +131,8 @@ export default function Products() {
             <h3 className="text-2xl font-bold text-primary">Sizes</h3>
             <p className="text-muted-foreground mt-2">Available dimensions for all curtain types.</p>
           </div>
-          <div className="overflow-x-auto">
-            <Table>
+          <div className="overflow-x-auto -mx-6 px-6 md:mx-0 md:px-0">
+            <Table className="min-w-[600px]">
               <TableHeader>
                 <TableRow className="hover:bg-transparent">
                   <TableHead className="w-[200px]">Dimension</TableHead>
@@ -177,8 +177,8 @@ export default function Products() {
             <h3 className="text-2xl font-bold text-primary">Product Comparison</h3>
             <p className="text-muted-foreground mt-2">Find the right curtain for your facility's needs.</p>
           </div>
-          <div className="overflow-x-auto">
-            <Table>
+          <div className="overflow-x-auto -mx-6 px-6 md:mx-0 md:px-0">
+            <Table className="min-w-[600px]">
               <TableHeader>
                 <TableRow className="hover:bg-transparent">
                   <TableHead className="w-[200px]">Feature</TableHead>

@@ -68,9 +68,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <Link key={item.href} href={item.href}>
                 <div
                   className={cn(
-                    "block py-2 text-base font-medium cursor-pointer",
+                    "block py-3 px-4 text-base font-medium cursor-pointer rounded-md hover:bg-muted transition-colors",
                     location === item.href
-                      ? "text-primary"
+                      ? "text-primary bg-primary/5"
                       : "text-muted-foreground"
                   )}
                   onClick={() => setIsMobileMenuOpen(false)}

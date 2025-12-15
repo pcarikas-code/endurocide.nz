@@ -91,8 +91,8 @@ export default function ClinicalStudies() {
 
           {/* Study 1 */}
           <Card className="overflow-hidden">
-            <div className="md:flex">
-              <div className="bg-muted/50 p-8 md:w-1/3 flex flex-col justify-center items-center text-center border-r">
+            <div className="flex flex-col md:flex-row">
+              <div className="bg-muted/50 p-8 md:w-1/3 flex flex-col justify-center items-center text-center border-b md:border-b-0 md:border-r">
                 <div className="text-4xl font-bold text-primary mb-2">96%</div>
                 <div className="text-sm font-medium text-muted-foreground">Pathogen Reduction</div>
                 <div className="mt-6 inline-flex items-center px-3 py-1 rounded-full bg-white border text-xs font-medium shadow-sm">
@@ -119,8 +119,8 @@ export default function ClinicalStudies() {
 
           {/* Study 2 */}
           <Card className="overflow-hidden">
-            <div className="md:flex">
-              <div className="bg-muted/50 p-8 md:w-1/3 flex flex-col justify-center items-center text-center border-r">
+            <div className="flex flex-col md:flex-row">
+              <div className="bg-muted/50 p-8 md:w-1/3 flex flex-col justify-center items-center text-center border-b md:border-b-0 md:border-r">
                 <div className="text-4xl font-bold text-primary mb-2">24</div>
                 <div className="text-sm font-medium text-muted-foreground">Months Efficacy</div>
                 <div className="mt-6 inline-flex items-center px-3 py-1 rounded-full bg-white border text-xs font-medium shadow-sm">
@@ -147,8 +147,8 @@ export default function ClinicalStudies() {
 
           {/* Study 3 */}
           <Card className="overflow-hidden">
-            <div className="md:flex">
-              <div className="bg-muted/50 p-8 md:w-1/3 flex flex-col justify-center items-center text-center border-r">
+            <div className="flex flex-col md:flex-row">
+              <div className="bg-muted/50 p-8 md:w-1/3 flex flex-col justify-center items-center text-center border-b md:border-b-0 md:border-r">
                 <TrendingDown className="h-12 w-12 text-primary mb-2" />
                 <div className="text-sm font-medium text-muted-foreground">Cost Analysis</div>
                 <div className="mt-6 inline-flex items-center px-3 py-1 rounded-full bg-white border text-xs font-medium shadow-sm">
