@@ -240,7 +240,7 @@ export default function Products() {
                   ].map((color) => (
                     <div key={color.name} className="flex items-center gap-3">
                       <div 
-                        className={`h-12 w-12 shrink-0 rounded-full shadow-sm overflow-hidden ${color.border ? 'border border-gray-300' : ''}`}
+                        className={`h-16 w-24 shrink-0 rounded-md shadow-sm overflow-hidden ${color.border ? 'border border-gray-300' : ''}`}
                       >
                         <img 
                           src={color.image} 
