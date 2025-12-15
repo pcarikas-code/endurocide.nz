@@ -168,7 +168,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </ul>
             
             <h4 className="font-semibold mb-4 text-foreground">Newsletter</h4>
-            <div className="klaviyo-form-R4tnTE"></div>
+            <div className="klaviyo-form-VmCrSz"></div>
           </div>
         </div>
         <div className="container max-w-[1000px] mx-auto px-4 md:px-8 mt-12 pt-8 border-t text-center text-xs text-muted-foreground">

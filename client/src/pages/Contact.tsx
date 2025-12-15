@@ -100,7 +100,7 @@ export default function Contact() {
                 <p className="text-sm text-muted-foreground mb-4">
                   Subscribe to our newsletter for the latest infection control news and product updates.
                 </p>
-                <div className="klaviyo-form-R4tnTE"></div>
+                <div className="klaviyo-form-VmCrSz"></div>
               </CardContent>
             </Card>
           </div>
