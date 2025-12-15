@@ -202,7 +202,7 @@ export default function Products() {
                   ].map((color) => (
                     <div key={color.name} className="flex items-center gap-3">
                       <div 
-                        className="h-10 w-10 rounded-full border border-border shadow-sm"
+                        className="h-12 w-12 rounded-full border border-border shadow-sm"
                         style={{ backgroundColor: color.hex }}
                       />
                       <span className="text-sm font-medium">{color.name}</span>
@@ -222,7 +222,7 @@ export default function Products() {
                   ].map((color) => (
                     <div key={color.name} className="flex items-center gap-3">
                       <div 
-                        className="h-10 w-10 rounded-full border border-border shadow-sm"
+                        className="h-12 w-12 rounded-full border border-border shadow-sm"
                         style={{ backgroundColor: color.hex }}
                       />
                       <span className="text-sm font-medium">{color.name}</span>
@@ -236,13 +236,18 @@ export default function Products() {
                 <h4 className="font-semibold text-lg border-b pb-2">Printed</h4>
                 <div className="grid grid-cols-1 gap-4">
                   {[
-                    { name: "Dotty on White", hex: "#FFFFFF", border: true }
+                    { name: "Dotty on White", image: "/images/dotty-pattern.jpg", border: true }
                   ].map((color) => (
                     <div key={color.name} className="flex items-center gap-3">
                       <div 
-                        className={`h-10 w-10 rounded-full shadow-sm ${color.border ? 'border border-gray-300' : ''}`}
-                        style={{ backgroundColor: color.hex }}
-                      />
+                        className={`h-12 w-12 rounded-full shadow-sm overflow-hidden ${color.border ? 'border border-gray-300' : ''}`}
+                      >
+                        <img 
+                          src={color.image} 
+                          alt={color.name}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
                       <span className="text-sm font-medium">{color.name}</span>
                     </div>
                   ))}
