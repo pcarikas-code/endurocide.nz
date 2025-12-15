@@ -104,7 +104,9 @@ export default function News() {
                   </div>
                 </div>
                 <CardTitle className="text-xl leading-snug group-hover:text-primary transition-colors">
-                  {post.title}
+                  <Link href={`/news/${post.slug}`} className="hover:underline focus:outline-none">
+                    {post.title}
+                  </Link>
                 </CardTitle>
               </CardHeader>
               <CardContent className="flex-1">
