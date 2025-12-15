@@ -1,8 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Check } from "lucide-react";
+import { Check, X } from "lucide-react";
 import { Link } from "wouter";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
 
 export default function Products() {
   const products = [
@@ -42,7 +50,7 @@ export default function Products() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
           {products.map((product) => (
             <Card key={product.id} className="flex flex-col overflow-hidden border-none shadow-md hover:shadow-xl transition-all duration-300 group">
               <div className="relative h-64 overflow-hidden">
@@ -86,6 +94,64 @@ export default function Products() {
               </CardFooter>
             </Card>
           ))}
+        </div>
+
+        {/* Comparison Table */}
+        <div className="bg-card rounded-xl border shadow-sm overflow-hidden mb-20">
+          <div className="p-6 border-b bg-muted/30">
+            <h3 className="text-2xl font-bold text-primary">Product Comparison</h3>
+            <p className="text-muted-foreground mt-2">Find the right curtain for your facility's needs.</p>
+          </div>
+          <div className="overflow-x-auto">
+            <Table>
+              <TableHeader>
+                <TableRow className="hover:bg-transparent">
+                  <TableHead className="w-[200px]">Feature</TableHead>
+                  <TableHead className="text-center font-bold text-primary">Standard Curtain</TableHead>
+                  <TableHead className="text-center font-bold text-primary">Mesh Top Curtain</TableHead>
+                  <TableHead className="text-center font-bold text-primary">Long Drop Curtain</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                <TableRow>
+                  <TableCell className="font-medium">Antimicrobial Action</TableCell>
+                  <TableCell className="text-center">Trap & Kill</TableCell>
+                  <TableCell className="text-center">Trap & Kill</TableCell>
+                  <TableCell className="text-center">Trap & Kill</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell className="font-medium">Sprinkler Compliant</TableCell>
+                  <TableCell className="text-center"><X className="h-4 w-4 mx-auto text-muted-foreground" /></TableCell>
+                  <TableCell className="text-center"><Check className="h-4 w-4 mx-auto text-secondary" /></TableCell>
+                  <TableCell className="text-center"><X className="h-4 w-4 mx-auto text-muted-foreground" /></TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell className="font-medium">Airflow Permeability</TableCell>
+                  <TableCell className="text-center">Standard</TableCell>
+                  <TableCell className="text-center">High (Mesh Top)</TableCell>
+                  <TableCell className="text-center">Standard</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell className="font-medium">Ideal Ceiling Height</TableCell>
+                  <TableCell className="text-center">Standard (2.4m - 2.7m)</TableCell>
+                  <TableCell className="text-center">Standard (2.4m - 2.7m)</TableCell>
+                  <TableCell className="text-center">High (&gt;3m)</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell className="font-medium">Privacy Level</TableCell>
+                  <TableCell className="text-center">Full</TableCell>
+                  <TableCell className="text-center">Partial (Mesh Top)</TableCell>
+                  <TableCell className="text-center">Full</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell className="font-medium">Durability</TableCell>
+                  <TableCell className="text-center">Up to 2 years</TableCell>
+                  <TableCell className="text-center">Up to 2 years</TableCell>
+                  <TableCell className="text-center">Up to 2 years</TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
+          </div>
         </div>
 
 
