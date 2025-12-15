@@ -45,11 +45,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 </span>
               </Link>
             ))}
-            <Link href="/contact">
-              <Button size="sm" className="bg-primary hover:bg-primary/90 text-white">
-                Get a Quote
-              </Button>
-            </Link>
+
           </nav>
 
           {/* Mobile Menu Toggle */}
@@ -83,11 +79,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 </div>
               </Link>
             ))}
-            <Link href="/contact">
-              <Button className="w-full mt-4" onClick={() => setIsMobileMenuOpen(false)}>
-                Get a Quote
-              </Button>
-            </Link>
+
           </div>
         )}
       </header>
