@@ -18,7 +18,12 @@ export default function Products() {
       id: "standard-curtain",
       title: "Standard Curtain",
       description: "Designed for suspended ceiling tracks. 100% polypropylene with patented antimicrobial technology.",
-      features: ["Height: 2.0m", "Widths: 3.75m, 5.5m, 7.5m", "Colors: Medical Blue, Teal, Grey", "Patented 'Trap & Kill' technology"],
+      features: ["Height: 2.0m", "Widths: 3.75m, 5.5m, 7.5m", "Patented 'Trap & Kill' technology"],
+      colors: [
+        { name: "Medical Blue", hex: "#0073bc" },
+        { name: "Teal", hex: "#008080" },
+        { name: "Grey", hex: "#808080" }
+      ],
       image: "/images/hero-curtain.jpg",
       tag: "Best Seller"
     },
@@ -26,7 +31,12 @@ export default function Products() {
       id: "mesh-curtain",
       title: "Mesh Top Curtain",
       description: "Designed for ceiling-fixed tracks. Features a 0.55m mesh top compliant with NFPA 13 for sprinkler systems.",
-      features: ["Height: 2.55m (incl. mesh)", "Widths: 3.75m, 5.5m, 7.5m", "Colors: Medical Blue, Teal, Grey", "Enhanced airflow & safety"],
+      features: ["Height: 2.55m (incl. mesh)", "Widths: 3.75m, 5.5m, 7.5m", "Enhanced airflow & safety"],
+      colors: [
+        { name: "Medical Blue", hex: "#0073bc" },
+        { name: "Teal", hex: "#008080" },
+        { name: "Grey", hex: "#808080" }
+      ],
       image: "/images/hospital-corridor.jpg",
       tag: "Safety Compliant"
     },
@@ -34,7 +44,12 @@ export default function Products() {
       id: "long-drop-curtain",
       title: "Long Drop Curtain",
       description: "Extra length curtains designed for high ceilings and ceiling-fixed tracks. Maintains full antimicrobial protection.",
-      features: ["Height: 2.6m", "Widths: 3.75m, 5.5m, 7.5m", "Colors: Medical Blue, Teal, Grey", "Ideal for high ceilings"],
+      features: ["Height: 2.6m", "Widths: 3.75m, 5.5m, 7.5m", "Ideal for high ceilings"],
+      colors: [
+        { name: "Medical Blue", hex: "#0073bc" },
+        { name: "Teal", hex: "#008080" },
+        { name: "Grey", hex: "#808080" }
+      ],
       image: "/images/hero-curtain.jpg", // Reusing hero image
       tag: "Specialist"
     }
@@ -75,7 +90,7 @@ export default function Products() {
                   {product.description}
                 </p>
                 
-                <ul className="space-y-2">
+                <ul className="space-y-2 mb-6">
                   {product.features.map((feature, i) => (
                     <li key={i} className="flex items-center gap-2 text-sm text-foreground/80">
                       <div className="h-5 w-5 rounded-full bg-secondary/10 flex items-center justify-center shrink-0">
@@ -85,6 +100,20 @@ export default function Products() {
                     </li>
                   ))}
                 </ul>
+
+                <div className="space-y-2">
+                  <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Available Colors</span>
+                  <div className="flex gap-2">
+                    {product.colors.map((color) => (
+                      <div 
+                        key={color.name}
+                        className="h-6 w-6 rounded-full border border-border shadow-sm ring-offset-background transition-transform hover:scale-110 cursor-help"
+                        style={{ backgroundColor: color.hex }}
+                        title={color.name}
+                      />
+                    ))}
+                  </div>
+                </div>
               </CardContent>
               
               <CardFooter className="pt-4 pb-6">
