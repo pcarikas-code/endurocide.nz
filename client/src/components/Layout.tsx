@@ -110,7 +110,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <h4 className="font-semibold mb-4 text-foreground">Company</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><Link href="/technology"><span className="hover:text-primary cursor-pointer">Technology</span></Link></li>
-              <li><Link href="/contact"><span className="hover:text-primary cursor-pointer">About Us</span></Link></li>
+              <li><Link href="/about"><span className="hover:text-primary cursor-pointer">About Us</span></Link></li>
               <li><Link href="/contact"><span className="hover:text-primary cursor-pointer">Contact</span></Link></li>
             </ul>
           </div>
