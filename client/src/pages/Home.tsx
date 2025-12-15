@@ -45,7 +45,7 @@ export default function Home() {
           </div>
           
           {/* Content Container - Added padding as requested */}
-          <div className="relative z-10 w-full px-8 py-20 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="relative z-10 w-full px-8 py-10 md:py-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="space-y-8 max-w-2xl">
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary/10 text-secondary font-medium text-sm border border-secondary/20 bg-white/50 backdrop-blur-sm">
                 <Shield className="h-4 w-4" />
