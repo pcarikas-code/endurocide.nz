@@ -12,7 +12,7 @@ export default function ProductGuides() {
       category: "Technical Specifications",
       items: [
         { title: "endurocide® Curtain Brochure", type: "PDF", size: "2.4 MB", description: "Complete overview of features, benefits, and technical data.", link: "/documents/endurocide-brochure.pdf" },
-        { title: "Technical Data Sheet", type: "PDF", size: "1.2 MB", description: "Detailed material specifications and antimicrobial performance data." },
+        { title: "Technical Data Sheet", type: "PDF", size: "1.2 MB", description: "Detailed material specifications and antimicrobial performance data.", link: "/documents/endurocide-datasheet.pdf" },
         { title: "Fire Safety Certification", type: "PDF", size: "0.8 MB", description: "NFPA 701 and BS 5867 compliance documentation." },
       ]
     },
