@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { FileText, Download, PlayCircle, Info, AlertTriangle, CheckCircle2, Mail } from "lucide-react";
+import { FileText, Download, PlayCircle, Info, AlertTriangle, CheckCircle2, Mail, ShieldCheck, BookOpen, FileBarChart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { Badge } from "@/components/ui/badge";
@@ -11,17 +11,17 @@ export default function ProductGuides() {
     { 
       category: "Technical Specifications",
       items: [
-        { title: "endurocide® Curtain Brochure", type: "PDF", size: "2.4 MB", description: "Complete overview of features, benefits, and technical data.", link: "/documents/endurocide-brochure.pdf" },
-        { title: "Technical Data Sheet", type: "PDF", size: "1.2 MB", description: "Detailed material specifications and antimicrobial performance data.", link: "/documents/endurocide-datasheet.pdf" },
-        { title: "Fire Safety Certification", type: "PDF", size: "0.8 MB", description: "NFPA 701 and BS 5867 compliance documentation.", link: "/documents/fire-retardant-certificate.pdf" },
+        { title: "endurocide® Curtain Brochure", type: "PDF", size: "2.4 MB", description: "Complete overview of features, benefits, and technical data.", link: "/documents/endurocide-brochure.pdf", icon: "brochure" },
+        { title: "Technical Data Sheet", type: "PDF", size: "1.2 MB", description: "Detailed material specifications and antimicrobial performance data.", link: "/documents/endurocide-datasheet.pdf", icon: "datasheet" },
+        { title: "Fire Safety Certification", type: "PDF", size: "0.8 MB", description: "NFPA 701 and BS 5867 compliance documentation.", link: "/documents/fire-retardant-certificate.pdf", icon: "certificate" },
       ]
     },
     {
       category: "Installation & Maintenance",
       items: [
-        { title: "Installation Guide", type: "PDF", size: "1.5 MB", description: "Step-by-step instructions for hanging curtains on standard tracks.", link: undefined },
-        { title: "Curtain Changing Procedure", type: "PDF", size: "1.1 MB", description: "Best practices for safe removal and replacement of curtains.", link: undefined },
-        { title: "Care & Maintenance", type: "PDF", size: "0.9 MB", description: "Guidelines for daily use and spot cleaning protocols.", link: undefined },
+        { title: "Installation Guide", type: "PDF", size: "1.5 MB", description: "Step-by-step instructions for hanging curtains on standard tracks.", link: undefined, icon: "guide" },
+        { title: "Curtain Changing Procedure", type: "PDF", size: "1.1 MB", description: "Best practices for safe removal and replacement of curtains.", link: undefined, icon: "guide" },
+        { title: "Care & Maintenance", type: "PDF", size: "0.9 MB", description: "Guidelines for daily use and spot cleaning protocols.", link: undefined, icon: "guide" },
       ]
     }
   ];
@@ -88,7 +88,15 @@ export default function ProductGuides() {
                       <CardHeader className="pb-3">
                         <div className="flex justify-between items-start gap-4">
                           <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-                            <FileText className="h-5 w-5 text-primary" />
+                            {item.icon === "certificate" ? (
+                              <ShieldCheck className="h-5 w-5 text-primary" />
+                            ) : item.icon === "datasheet" ? (
+                              <FileBarChart className="h-5 w-5 text-primary" />
+                            ) : item.icon === "guide" ? (
+                              <BookOpen className="h-5 w-5 text-primary" />
+                            ) : (
+                              <FileText className="h-5 w-5 text-primary" />
+                            )}
                           </div>
                           <Badge variant="secondary" className="text-xs font-normal">
                             {item.type}
