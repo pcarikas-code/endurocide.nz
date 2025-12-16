@@ -19,7 +19,7 @@ export default function ProductGuides() {
     {
       category: "Installation & Maintenance",
       items: [
-        { title: "Installation Guide", type: "PDF", size: "1.5 MB", description: "Step-by-step instructions for hanging curtains on standard tracks.", link: undefined, icon: "guide" },
+        { title: "Installation Guide", type: "PDF", size: "1.5 MB", description: "Step-by-step instructions for hanging curtains on standard tracks.", link: "/documents/installation-guide.pdf", icon: "guide" },
         { title: "Curtain Changing Procedure", type: "PDF", size: "1.1 MB", description: "Best practices for safe removal and replacement of curtains.", link: undefined, icon: "guide" },
         { title: "Care & Maintenance", type: "PDF", size: "0.9 MB", description: "Guidelines for daily use and spot cleaning protocols.", link: undefined, icon: "guide" },
       ]
