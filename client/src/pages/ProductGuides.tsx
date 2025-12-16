@@ -11,7 +11,7 @@ export default function ProductGuides() {
     { 
       category: "Technical Specifications",
       items: [
-        { title: "endurocide® Curtain Brochure", type: "PDF", size: "2.4 MB", description: "Complete overview of features, benefits, and technical data." },
+        { title: "endurocide® Curtain Brochure", type: "PDF", size: "2.4 MB", description: "Complete overview of features, benefits, and technical data.", link: "/documents/endurocide-brochure.pdf" },
         { title: "Technical Data Sheet", type: "PDF", size: "1.2 MB", description: "Detailed material specifications and antimicrobial performance data." },
         { title: "Fire Safety Certification", type: "PDF", size: "0.8 MB", description: "NFPA 701 and BS 5867 compliance documentation." },
       ]
@@ -99,12 +99,21 @@ export default function ProductGuides() {
                       <CardContent>
                         <div className="flex items-center justify-between pt-2 border-t mt-2">
                           <span className="text-xs text-muted-foreground font-medium">{item.size}</span>
-                          <Link href="/contact">
-                            <Button variant="ghost" size="sm" className="gap-2 h-8 text-primary hover:text-primary hover:bg-primary/10">
-                              <Mail className="h-4 w-4" />
-                              Request Copy
-                            </Button>
-                          </Link>
+                          {item.link ? (
+                            <a href={item.link} target="_blank" rel="noopener noreferrer" download>
+                              <Button variant="ghost" size="sm" className="gap-2 h-8 text-primary hover:text-primary hover:bg-primary/10">
+                                <Download className="h-4 w-4" />
+                                Download
+                              </Button>
+                            </a>
+                          ) : (
+                            <Link href="/contact">
+                              <Button variant="ghost" size="sm" className="gap-2 h-8 text-primary hover:text-primary hover:bg-primary/10">
+                                <Mail className="h-4 w-4" />
+                                Request Copy
+                              </Button>
+                            </Link>
+                          )}
                         </div>
                       </CardContent>
                     </Card>

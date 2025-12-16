@@ -142,10 +142,13 @@ export default function Products() {
                 </div>
               </CardContent>
               
-              <CardFooter className="pt-4 pb-6">
+              <CardFooter className="pt-4 pb-6 flex flex-col gap-3">
                 <Link href="/contact" className="w-full">
                   <Button className="w-full" variant="outline">Request Info</Button>
                 </Link>
+                <a href="/documents/endurocide-brochure.pdf" target="_blank" rel="noopener noreferrer" download className="w-full">
+                  <Button className="w-full" variant="ghost">Download Brochure</Button>
+                </a>
               </CardFooter>
             </Card>
           ))}
