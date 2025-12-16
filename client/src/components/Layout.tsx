@@ -67,7 +67,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
         {/* Mobile Nav */}
         {isMobileMenuOpen && (
-          <div className="md:hidden fixed inset-0 top-16 z-50 bg-background border-t flex flex-col overflow-y-auto">
+          <div className="md:hidden fixed inset-0 top-[64px] z-40 bg-background border-t flex flex-col overflow-y-auto h-[calc(100vh-64px)]">
             <div className="p-4 space-y-2 flex-1">
               {navItems.map((item) => (
                 <Link key={item.href} href={item.href}>
