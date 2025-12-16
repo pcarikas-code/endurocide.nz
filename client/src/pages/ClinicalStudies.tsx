@@ -20,6 +20,115 @@ export default function ClinicalStudies() {
           </p>
         </div>
 
+        {/* Mechanism of Action Section */}
+        <div className="max-w-4xl mx-auto mb-20 space-y-8">
+          <div className="text-center space-y-4">
+            <h2 className="text-3xl font-bold tracking-tight">How It Works</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Our patented liquid formulation provides a dual-action defense system that traps and kills pathogens on contact.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <Card className="bg-blue-50/50 border-blue-100">
+              <CardHeader>
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="p-2 bg-blue-100 rounded-lg">
+                    <ShieldCheck className="h-6 w-6 text-blue-700" />
+                  </div>
+                  <CardTitle className="text-xl text-blue-900">Bacteriostatic & Sporistatic</CardTitle>
+                </div>
+                <CardDescription className="text-blue-700/80 font-medium">
+                  Traps pathogens & inhibits growth
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="text-sm text-muted-foreground space-y-4">
+                <p>
+                  Prevents pathogens from reproducing on the fabric surface. Tested to <strong>ISO 20645</strong>, <strong>AATCC 147</strong>, and <strong>CG 147</strong> standards.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-blue-600 shrink-0 mt-0.5" />
+                    <span>Inhibits respiration & cell metabolism</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-blue-600 shrink-0 mt-0.5" />
+                    <span>Prevents re-transmission to other surfaces</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-red-50/50 border-red-100">
+              <CardHeader>
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="p-2 bg-red-100 rounded-lg">
+                    <Microscope className="h-6 w-6 text-red-700" />
+                  </div>
+                  <CardTitle className="text-xl text-red-900">Bactericidal & Sporicidal</CardTitle>
+                </div>
+                <CardDescription className="text-red-700/80 font-medium">
+                  Actively kills pathogens
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="text-sm text-muted-foreground space-y-4">
+                <p>
+                  Destroys pathogens on the curtain surface. Tested to <strong>ISO 20743</strong>, <strong>AATCC 100</strong>, and <strong>JIS Z 2801</strong> standards.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-red-600 shrink-0 mt-0.5" />
+                    <span>Ruptures cell membranes & viral envelopes</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-red-600 shrink-0 mt-0.5" />
+                    <span>Causes lethal DNA damage to spores</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+
+          <Card className="bg-slate-50 border-slate-200">
+            <CardHeader>
+              <CardTitle className="text-lg flex items-center gap-2">
+                <FlaskConical className="h-5 w-5 text-slate-600" />
+                Patented Liquid Formulation
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="text-sm text-muted-foreground">
+              <p>
+                At the manufacturing stage, our polypropylene fabric is impregnated with the unique <strong>endurocide® Curtain Liquid</strong>. This creates a permanent polymer layer with dual 'static' (trapping) and 'cidal' (killing) action that remains effective for up to 24 months.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+
+        {/* Tested Pathogens List */}
+        <div className="max-w-5xl mx-auto mb-20">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-bold tracking-tight mb-4">Independently Tested Pathogens</h2>
+            <p className="text-lg text-muted-foreground">
+              Validated against international standards for a broad spectrum of healthcare-associated pathogens.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              "C.difficile spores", "VRE", "Pseudomonas aeruginosa", "Salmonella choleraesuis",
+              "Aspergillus niger", "Human Coronavirus", "Serratia marcescens", "E.coli",
+              "ESBL E.coli", "Acinetobacter baumanii", "Candida albicans", "Measles virus",
+              "MRSA", "E.hirae", "ESBL Klebsiella pneumoniae", "Mycobacteria tuberculosis",
+              "Candidia auris", "H1N1 Swine flu", "Vaccinia virus"
+            ].map((pathogen, i) => (
+              <div key={i} className="flex items-center gap-3 p-3 bg-white border rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <div className="h-2 w-2 rounded-full bg-green-500 shrink-0" />
+                <span className="text-sm font-medium text-slate-700">{pathogen}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-20">
           <Card className="bg-primary/5 border-primary/20">
             <CardHeader>
