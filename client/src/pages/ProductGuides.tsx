@@ -270,7 +270,9 @@ export default function ProductGuides() {
                   <p className="text-blue-700 text-sm mb-4">
                     Our technical team can provide detailed guidance on infection control protocols and product suitability for your specific facility requirements.
                   </p>
-                  <Button size="sm" className="bg-blue-600 hover:bg-blue-700 text-white">Contact Support</Button>
+                  <Link href="/contact">
+                    <Button size="sm" className="bg-blue-600 hover:bg-blue-700 text-white">Contact Support</Button>
+                  </Link>
                 </div>
               </div>
             </div>
