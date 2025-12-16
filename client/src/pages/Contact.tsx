@@ -10,23 +10,28 @@ export default function Contact() {
   const [hasError, setHasError] = useState(false);
 
   useEffect(() => {
-    // Load Prospect CRM form script
-    const script = document.createElement("script");
-    script.src = "https://userresources.prospect365.com/forms/QXZhbiBNZWR2ZWRldkFudvUt0fK4t19xECQqo5SOegDfVln3lg==/5/form.js";
-    script.defer = true;
-    
-    script.onerror = () => {
+    // Load Prospect CRM form #5 (Contact Form)
+    const script5 = document.createElement("script");
+    script5.src = "https://userresources.prospect365.com/forms/QXZhbiBNZWR2ZWRldkFudvUt0fK4t19xECQqo5SOegDfVln3lg==/5/form.js";
+    script5.defer = true;
+    script5.onerror = () => {
       setHasError(true);
-      console.error("Failed to load Prospect CRM form script");
+      console.error("Failed to load Prospect CRM form #5 script");
     };
+    document.body.appendChild(script5);
 
-    document.body.appendChild(script);
+    // Load Prospect CRM form #7 (Newsletter Form)
+    const script7 = document.createElement("script");
+    script7.src = "https://userresources.prospect365.com/forms/QXZhbiBNZWR2ZWRldkFudvUt0fK4t19xECQqo5SOegDfVln3lg==/7/form.js";
+    script7.defer = true;
+    script7.onerror = () => {
+      console.error("Failed to load Prospect CRM form #7 script");
+    };
+    document.body.appendChild(script7);
 
     return () => {
-      // Check if script is still a child of body before removing
-      if (document.body.contains(script)) {
-        document.body.removeChild(script);
-      }
+      if (document.body.contains(script5)) document.body.removeChild(script5);
+      if (document.body.contains(script7)) document.body.removeChild(script7);
     };
   }, []);
 
@@ -59,6 +64,22 @@ export default function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {/* Contact Info */}
           <div className="space-y-6">
+            <Card className="border-none shadow-md">
+              <CardHeader>
+                <CardTitle className="text-xl font-bold text-primary">Stay Updated</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground mb-4">
+                  Subscribe to our newsletter for the latest infection control news and product updates.
+                </p>
+                <div id="prospect-form-7">
+                  <div className="prospect-form-loading flex justify-center items-center py-4">
+                    <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-primary"></div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
             <Card className="border-none shadow-md">
               <CardHeader>
                 <CardTitle className="text-xl font-bold text-primary">Contact Information</CardTitle>

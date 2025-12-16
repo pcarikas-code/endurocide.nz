@@ -1,7 +1,16 @@
 /* Prospect CRM Form Custom Styling */
 
+/* 
+   CRITICAL: Prospect forms often use Shadow DOM or strict internal styles.
+   We use !important to override inline styles and specific selectors.
+   We target both #prospect-form-5 (Contact) and #prospect-form-7 (Newsletter).
+*/
+
+/* --- Common Styles for Both Forms --- */
+
 /* Form Container */
-#prospect-form-5 {
+#prospect-form-5,
+#prospect-form-7 {
   font-family: inherit;
   width: 100%;
   display: block !important;
@@ -9,19 +18,15 @@
   visibility: visible !important;
 }
 
-/* 
-   CRITICAL: Prospect forms often use Shadow DOM or strict internal styles.
-   We use !important to override inline styles and specific selectors.
-   We also target generic elements within the container.
-*/
-
 /* Force grid layout on the form element itself */
 #prospect-form-5 form,
 #prospect-form-5 > form,
+#prospect-form-7 form,
+#prospect-form-7 > form,
 .prospect-form {
   display: grid !important;
   grid-template-columns: 1fr !important;
-  gap: 1.5rem !important;
+  gap: 1rem !important;
   width: 100% !important;
   max-width: 100% !important;
   box-sizing: border-box !important;
@@ -30,6 +35,8 @@
 /* Labels */
 #prospect-form-5 label,
 #prospect-form-5 .control-label,
+#prospect-form-7 label,
+#prospect-form-7 .control-label,
 .prospect-form-text-label {
   display: block !important;
   font-size: 0.875rem !important;
@@ -52,6 +59,9 @@ span.required {
 #prospect-form-5 input:not([type="submit"]):not([type="button"]),
 #prospect-form-5 select,
 #prospect-form-5 textarea,
+#prospect-form-7 input:not([type="submit"]):not([type="button"]),
+#prospect-form-7 select,
+#prospect-form-7 textarea,
 .form-control {
   display: flex !important;
   width: 100% !important;
@@ -71,6 +81,7 @@ span.required {
 }
 
 #prospect-form-5 textarea,
+#prospect-form-7 textarea,
 textarea.form-control {
   height: auto !important;
   min-height: 120px !important;
@@ -78,7 +89,10 @@ textarea.form-control {
 
 #prospect-form-5 input:focus,
 #prospect-form-5 select:focus,
-#prospect-form-5 textarea:focus {
+#prospect-form-5 textarea:focus,
+#prospect-form-7 input:focus,
+#prospect-form-7 select:focus,
+#prospect-form-7 textarea:focus {
   outline: 2px solid transparent !important;
   outline-offset: 2px !important;
   border-color: hsl(var(--ring)) !important;
@@ -88,6 +102,8 @@ textarea.form-control {
 /* Submit Button */
 #prospect-form-5 button[type="submit"],
 #prospect-form-5 input[type="submit"],
+#prospect-form-7 button[type="submit"],
+#prospect-form-7 input[type="submit"],
 button.prospect-form-submit,
 .btn-primary {
   display: inline-flex !important;
@@ -112,6 +128,8 @@ button.prospect-form-submit,
 
 #prospect-form-5 button[type="submit"]:hover,
 #prospect-form-5 input[type="submit"]:hover,
+#prospect-form-7 button[type="submit"]:hover,
+#prospect-form-7 input[type="submit"]:hover,
 button.prospect-form-submit:hover {
   background-color: hsl(var(--primary) / 0.9) !important;
 }
@@ -129,12 +147,34 @@ button.prospect-form-submit:hover {
 
 /* Hide any loading spinners provided by the script if we have our own */
 #prospect-form-5 .spinner,
-#prospect-form-5 .loading {
+#prospect-form-5 .loading,
+#prospect-form-7 .spinner,
+#prospect-form-7 .loading {
   display: none !important;
 }
 
-/* Responsive adjustments */
+/* --- Specific Adjustments for Form #7 (Newsletter) --- */
+
+/* Make the newsletter form more compact */
+#prospect-form-7 form,
+#prospect-form-7 > form {
+  gap: 0.75rem !important;
+}
+
+#prospect-form-7 input:not([type="submit"]):not([type="button"]) {
+  height: 2.25rem !important;
+}
+
+#prospect-form-7 button[type="submit"],
+#prospect-form-7 input[type="submit"] {
+  margin-top: 0.5rem !important;
+  width: 100% !important;
+}
+
+/* --- Responsive Adjustments --- */
+
 @media (min-width: 768px) {
+  /* Contact Form (#5) - Two Column Layout */
   #prospect-form-5 form,
   #prospect-form-5 > form,
   form.prospect-form {
@@ -142,7 +182,7 @@ button.prospect-form-submit:hover {
     gap: 1.5rem !important;
   }
 
-  /* Make full width elements span both columns */
+  /* Make full width elements span both columns in Contact Form */
   #prospect-form-5 .full-width,
   #prospect-form-5 button[type="submit"],
   #prospect-form-5 input[type="submit"],
@@ -151,10 +191,15 @@ button.prospect-form-submit:hover {
   }
   
   /* Target specific fields that should be full width based on common patterns */
-  /* Usually the last few fields like 'Short Description' are full width */
   #prospect-form-5 > form > div:nth-last-child(1),
   #prospect-form-5 > form > div:nth-last-child(2),
   #prospect-form-5 > form > div:nth-last-child(3) {
      grid-column: 1 / -1 !important;
+  }
+
+  /* Newsletter Form (#7) - Keep Single Column but Compact */
+  #prospect-form-7 form,
+  #prospect-form-7 > form {
+    grid-template-columns: 1fr !important;
   }
 }
