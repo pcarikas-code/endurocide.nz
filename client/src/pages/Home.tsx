@@ -56,15 +56,16 @@ export default function Home() {
               <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-foreground leading-tight flex flex-col gap-4">
                 <img src="/logo.webp" alt="endurocide® NZ Logo" className="h-12 md:h-16 w-auto self-start" />
                 <span>The Future of <span className="text-primary">Hospital Hygiene</span></span>
-                <TextCarousel 
-                  items={[
-                    "Kills bacteria on contact",
-                    "Up to 24 months efficacy",
-                    "Proven pathogen reduction",
-                    "Cost-effective solution"
-                  ]} 
-                  className="text-2xl md:text-3xl font-medium text-muted-foreground/80 h-[1.5em]"
-                />
+                  <TextCarousel 
+                    items={[
+                      "Kills bacteria on contact",
+                      "Up to 24 months efficacy",
+                      "Proven pathogen reduction",
+                      "Cost-effective solution"
+                    ]} 
+                    interval={2000}
+                    className="text-2xl md:text-3xl font-medium text-muted-foreground/80 h-[1.5em]"
+                  />
               </h1>
               
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-[90%] md:max-w-none">
