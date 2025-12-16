@@ -4,48 +4,13 @@ import { Menu, X, ShieldCheck } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 
-declare global {
-  interface Window {
-    klaviyo: any;
-  }
-}
+
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [location] = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  // Ensure Klaviyo script is loaded and form is rendered
-  useEffect(() => {
-    // Function to initialize Klaviyo forms
-    const initKlaviyo = () => {
-      // In SPAs, Klaviyo forms might not automatically re-render on route changes
-      // We need to manually trigger the form rendering if the script is loaded
-      if (window.klaviyo) {
-        // This is a safer way to trigger form rendering without causing "Unable to process event" errors
-        // We dispatch a custom event that Klaviyo listens to, or simply let the script run
-        // However, since we removed the explicit enable() call, we rely on the container being present
-        // The container <div className="klaviyo-form-VmCrSz"></div> is in the footer
-        
-        // If forms are still not showing, we can try to force a re-scan of the DOM
-        // But for now, we'll stick to the standard implementation which relies on the script finding the div
-      }
-    };
 
-    // Check if script is already loaded
-    if (window.klaviyo) {
-      initKlaviyo();
-    } else {
-      // If not, wait for it
-      const checkKlaviyo = setInterval(() => {
-        if (window.klaviyo) {
-          initKlaviyo();
-          clearInterval(checkKlaviyo);
-        }
-      }, 500);
-      
-      return () => clearInterval(checkKlaviyo);
-    }
-  }, [location]); // Re-run on route change
 
   const navItems = [
     { href: "/", label: "Home" },
@@ -187,8 +152,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <li>+64 (0)21 029 66718</li>
             </ul>
             
-            <h4 className="font-semibold mb-4 text-foreground">Newsletter</h4>
-            <div className="klaviyo-form-VmCrSz"></div>
+
           </div>
         </div>
         <div className="container max-w-[1000px] mx-auto px-4 md:px-8 mt-12 pt-8 border-t text-center text-xs text-muted-foreground">
