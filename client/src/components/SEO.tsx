@@ -57,7 +57,9 @@ export default function SEO({
       canonical.setAttribute("rel", "canonical");
       document.head.appendChild(canonical);
     }
-    canonical.setAttribute("href", url);
+    // Ensure canonical URL does not contain query parameters
+    const canonicalUrl = new URL(url);
+    canonical.setAttribute("href", `${canonicalUrl.origin}${canonicalUrl.pathname}`);
 
     // Inject Structured Data (JSON-LD)
     if (structuredData) {
