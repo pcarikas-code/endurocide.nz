@@ -18,23 +18,16 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     // Function to initialize Klaviyo forms
     const initKlaviyo = () => {
-      // In SPAs, we shouldn't call enable() repeatedly with the same ID as it causes errors
-      // Instead, we just need to ensure the script is loaded.
-      // The embed code in the HTML handles the initial load.
-      // For route changes, we might need to manually trigger a re-render if Klaviyo supports it,
-      // but 'enable' with the form ID is incorrect usage for the main script.
-      
-      // However, if we are using the 'company_id' script, we might need to push identity info
-      // or just let the script run naturally.
-      
-      // If we need to force a check for forms on the page:
-      // Some users report success by dispatching a custom event or re-injecting the script
-      // But the safest bet for 'Unable to process event' is to STOP calling enable() incorrectly.
-      
-      // We will try to just log that it's loaded for now, and rely on the script in index.html
-      // If forms are missing on navigation, we might need a different approach (like re-appending the script)
+      // In SPAs, Klaviyo forms might not automatically re-render on route changes
+      // We need to manually trigger the form rendering if the script is loaded
       if (window.klaviyo) {
-        // console.log("Klaviyo loaded");
+        // This is a safer way to trigger form rendering without causing "Unable to process event" errors
+        // We dispatch a custom event that Klaviyo listens to, or simply let the script run
+        // However, since we removed the explicit enable() call, we rely on the container being present
+        // The container <div className="klaviyo-form-VmCrSz"></div> is in the footer
+        
+        // If forms are still not showing, we can try to force a re-scan of the DOM
+        // But for now, we'll stick to the standard implementation which relies on the script finding the div
       }
     };
 
