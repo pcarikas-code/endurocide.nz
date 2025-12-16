@@ -13,15 +13,15 @@ export default function ProductGuides() {
       items: [
         { title: "endurocide® Curtain Brochure", type: "PDF", size: "2.4 MB", description: "Complete overview of features, benefits, and technical data.", link: "/documents/endurocide-brochure.pdf" },
         { title: "Technical Data Sheet", type: "PDF", size: "1.2 MB", description: "Detailed material specifications and antimicrobial performance data.", link: "/documents/endurocide-datasheet.pdf" },
-        { title: "Fire Safety Certification", type: "PDF", size: "0.8 MB", description: "NFPA 701 and BS 5867 compliance documentation." },
+        { title: "Fire Safety Certification", type: "PDF", size: "0.8 MB", description: "NFPA 701 and BS 5867 compliance documentation.", link: "/documents/fire-retardant-certificate.pdf" },
       ]
     },
     {
       category: "Installation & Maintenance",
       items: [
-        { title: "Installation Guide", type: "PDF", size: "1.5 MB", description: "Step-by-step instructions for hanging curtains on standard tracks." },
-        { title: "Curtain Changing Procedure", type: "PDF", size: "1.1 MB", description: "Best practices for safe removal and replacement of curtains." },
-        { title: "Care & Maintenance", type: "PDF", size: "0.9 MB", description: "Guidelines for daily use and spot cleaning protocols." },
+        { title: "Installation Guide", type: "PDF", size: "1.5 MB", description: "Step-by-step instructions for hanging curtains on standard tracks.", link: undefined },
+        { title: "Curtain Changing Procedure", type: "PDF", size: "1.1 MB", description: "Best practices for safe removal and replacement of curtains.", link: undefined },
+        { title: "Care & Maintenance", type: "PDF", size: "0.9 MB", description: "Guidelines for daily use and spot cleaning protocols.", link: undefined },
       ]
     }
   ];
