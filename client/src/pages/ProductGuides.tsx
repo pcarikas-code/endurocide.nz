@@ -29,15 +29,18 @@ export default function ProductGuides() {
   const faqs = [
     {
       question: "How often should curtains be changed?",
-      answer: <span><strong>endurocide®</strong> curtains are designed to remain effective for up to 24 months. However, they should be replaced immediately if visibly soiled, damaged, or in accordance with your facility's specific infection control protocols.</span>
+      answerText: "endurocide® curtains are designed to remain effective for up to 24 months. However, they should be replaced immediately if visibly soiled, damaged, or in accordance with your facility's specific infection control protocols.",
+      answerJsx: <span><strong>endurocide®</strong> curtains are designed to remain effective for up to 24 months. However, they should be replaced immediately if visibly soiled, damaged, or in accordance with your facility's specific infection control protocols.</span>
     },
     {
       question: "Are the curtains fire retardant?",
-      answer: <span>Yes, all <strong>endurocide®</strong> curtains are treated with flame retardant and meet international fire safety standards including NFPA 701 and BS 5867 Part 2 Type C.</span>
+      answerText: "Yes, all endurocide® curtains are treated with flame retardant and meet international fire safety standards including NFPA 701 and BS 5867 Part 2 Type C.",
+      answerJsx: <span>Yes, all <strong>endurocide®</strong> curtains are treated with flame retardant and meet international fire safety standards including NFPA 701 and BS 5867 Part 2 Type C.</span>
     },
     {
       question: "How do I dispose of the curtains?",
-      answer: <span><strong>endurocide®</strong> curtains are 100% recyclable polypropylene. However, if contaminated with infectious material, they should be disposed of as clinical waste according to local regulations.</span>
+      answerText: "endurocide® curtains are 100% recyclable polypropylene. However, if contaminated with infectious material, they should be disposed of as clinical waste according to local regulations.",
+      answerJsx: <span><strong>endurocide®</strong> curtains are 100% recyclable polypropylene. However, if contaminated with infectious material, they should be disposed of as clinical waste according to local regulations.</span>
     }
   ];
 
@@ -55,7 +58,7 @@ export default function ProductGuides() {
             "name": faq.question,
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": faq.answer
+              "text": faq.answerText
             }
           }))
         }}
@@ -247,7 +250,7 @@ export default function ProductGuides() {
                     </div>
                   </CardHeader>
                   <CardContent className="pt-6">
-                    <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>
+                    <p className="text-muted-foreground leading-relaxed">{faq.answerJsx}</p>
                   </CardContent>
                 </Card>
               ))}
