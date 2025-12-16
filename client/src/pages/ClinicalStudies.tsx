@@ -1,8 +1,10 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { FlaskConical, CheckCircle2, FileText, TrendingDown, ShieldCheck, Microscope } from "lucide-react";
+import { FlaskConical, CheckCircle2, FileText, TrendingDown, ShieldCheck, Microscope, Info } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import SEO from "@/components/SEO";
+import { pathogenData } from "@/data/pathogenData";
 
 export default function ClinicalStudies() {
   return (
@@ -114,18 +116,45 @@ export default function ClinicalStudies() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            {[
-              "C.difficile spores", "VRE", "Pseudomonas aeruginosa", "Salmonella choleraesuis",
-              "Aspergillus niger", "Human Coronavirus", "Serratia marcescens", "E.coli",
-              "ESBL E.coli", "Acinetobacter baumanii", "Candida albicans", "Measles virus",
-              "MRSA", "E.hirae", "ESBL Klebsiella pneumoniae", "Mycobacteria tuberculosis",
-              "Candidia auris", "H1N1 Swine flu", "Vaccinia virus"
-            ].map((pathogen, i) => (
-              <div key={i} className="flex items-center gap-3 p-3 bg-white border rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                <div className="h-2 w-2 rounded-full bg-green-500 shrink-0" />
-                <span className="text-sm font-medium text-slate-700">{pathogen}</span>
-              </div>
+            {pathogenData.map((pathogen, i) => (
+              <TooltipProvider key={i}>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <div className="flex items-center gap-3 p-3 bg-white border rounded-lg shadow-sm hover:shadow-md transition-all cursor-help group">
+                      <div className={`h-2 w-2 rounded-full shrink-0 ${
+                        pathogen.type === 'Spore' ? 'bg-red-500' :
+                        pathogen.type === 'Virus' ? 'bg-purple-500' :
+                        pathogen.type === 'Fungus' ? 'bg-orange-500' :
+                        'bg-green-500'
+                      }`} />
+                      <span className="text-sm font-medium text-slate-700 group-hover:text-primary transition-colors">{pathogen.name}</span>
+                      <Info className="h-3 w-3 text-muted-foreground ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
+                    </div>
+                  </TooltipTrigger>
+                  <TooltipContent className="p-3 max-w-[250px]">
+                    <div className="space-y-1">
+                      <p className="font-semibold text-xs uppercase tracking-wider opacity-70">{pathogen.type}</p>
+                      <p className="font-medium">{pathogen.result}</p>
+                      <p className="text-xs opacity-80">Standard: {pathogen.standard}</p>
+                    </div>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
             ))}
+          </div>
+          <div className="mt-6 flex flex-wrap justify-center gap-6 text-xs text-muted-foreground">
+            <div className="flex items-center gap-2">
+              <div className="h-2 w-2 rounded-full bg-green-500" /> <span>Bacteria</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="h-2 w-2 rounded-full bg-red-500" /> <span>Spores</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="h-2 w-2 rounded-full bg-purple-500" /> <span>Viruses</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="h-2 w-2 rounded-full bg-orange-500" /> <span>Fungi</span>
+            </div>
           </div>
         </div>
 
